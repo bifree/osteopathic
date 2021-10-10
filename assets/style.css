@@ -1,3 +1,43 @@
 /* Samさん担当箇所 */
 
 /* samさん担当箇所 */
+
+
+/* みち */
+
+body{
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+a{
+  text-decoration:none;
+  display:inline-block;
+}
+
+img{
+  width:100%;
+  vertical-align:center;
+}
+
+.container{
+  width:1140px;
+  margin:0 auto;
+  padding:50px 0;
+}
+
+.sec-title{
+  font-size:36px;
+  text-align:center;
+}
+
+header{
+  width:1140px;
+  margin:0 auto;
+}
+
+.lp-top__cp{
+  width:100%;
+}
+
+
+
