@@ -5,9 +5,14 @@
 
 /* みち */
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
   font-size:16px;
+  line-height:1.7
 }
 
 a{
@@ -159,7 +164,7 @@ opacity:0.8;
 }
 
 .suitable__list__li{
-  line-height:2;
+  line-height:2.3;
 }
 
 .fa-times{
@@ -204,8 +209,12 @@ opacity:0.8;
 .profile__name{
   padding:3px 10px;
   margin-bottom:10px;
-  border-left:solid 5px #333;
+  border-left:solid 5px #36A3D5;
   font-size:24px;
+}
+
+.profile__name__clinic{
+  font-size:20px;
 }
 
 .profile__career,.profile__text{
@@ -213,13 +222,21 @@ opacity:0.8;
   line-height:1.7
 }
 
-.select__why{
+.select__img{
+  margin:50px 0;
+}
+
+.sec-title__sub{
   text-align:center;
   font-size:24px;
   padding:10px;
   margin:50px 0;
   border-top: 3px dotted #36A3D5;
   border-bottom: 3px dotted #36A3D5;
+}
+
+.why__item{
+  clear:both
 }
 
 .why__title{
@@ -273,17 +290,145 @@ opacity:0.8;
 }
 
 .why__content{
-  display:flex;
-  padding:0 70px;
-  justify-content: space-between;
-}
-
-
-.why__content__text{
-  width:65%;
+  padding:0 80px;
 }
 
 .why__content__img{
+  width:350px;
+  height:250px;
+}
+
+.why__content__img img{
+  height:100%;
+  object-fit:cover;;
+}
+
+.img__right{
+  float:right;
+  margin:0 0 20px 20px;
+}
+
+.img__left{
+  float:left;
+  margin:0 20px 20px 0;
+}
+
+.why__fascia{
+  font-size:24px;
+}
+
+.why__fascia-feature {
+  position: relative;
+  display: inline-block;
+  margin: 10px 120px;
+  padding:20px 0 0;
+  border-top: solid 3px #36A3D5;
+  border-bottom: solid 3px #36A3D5;
+}
+
+.why__fascia-feature:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #FFF;
+  z-index: 2;
+}
+
+.why__fascia-feature:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #36A3D5;
+  z-index: 1;
+}
+
+.fascia-feature__item{
+  padding-bottom:20px
+}
+
+.fascia-feature__title{
+  position: relative;
+  padding:10px 0 10px 130px;
+  font-size:22px;
+}
+
+.fascia-feature__title__point{
+  position: absolute;
+  top:10px;
+  left: 0;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 10px;
+  background: #0075a9;
+}
+
+.fa-hand-point-right {
+  margin-right:5px;
+}
+
+.fa-hand-point-right:after {
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -11px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 7px 0 7px 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #0075a9;
+}
+
+.why__dr-voice{
+  margin: 10px 120px;
+}
+
+.dr-voice__item{
+  display:flex;
+  justify-content:space-between;
+  border:solid 2px #c3c3c3;
+  padding:20px;
+  margin:50px 0;
+}
+
+.dr-voice__img{
   width:30%;
 }
 
+.dr-voice__text{
+  width:65%;
+}
+
+.dr-voice__text__title{
+  font-size:22px;
+}
+
+.dr-voice__text__neme{
+  padding:3px 10px;
+  margin:10px 0;
+  border-left:solid 5px #36A3D5;
+  font-size:22px;
+}
+
+.dr-voice__text__clinic{
+  font-size:20px;
+}
+
+.caution{
+  font-size:10px;
+  color:#c3c3c3;
+  margin-top:10px;
+}
+
+.treatment__time__title{
+  font-size:22px;
+}
+
+.fa-stopwatch{
+  margin-right:10px;
+}
