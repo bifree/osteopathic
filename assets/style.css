@@ -65,6 +65,24 @@ img{
   opacity:0.8;
 }
 
+.red{
+  color:red;
+}
+
+.yellow{
+  color:yellow;
+}
+
+.marker-blue{
+  background: linear-gradient(transparent 75%, blue 0%);
+  padding-bottom:2px
+}
+
+.size-big{
+  font-size:20px;
+  padding:5px 0;
+}
+
 
 
 header{
@@ -198,6 +216,22 @@ header{
 
 
 
+.content-img{
+  display:flex;
+  justify-content:space-between;
+  margin-top:50px;
+}
+
+.content-img__image{
+  width:28%;
+  object-fit:cover;
+}
+
+.knee .content-img{
+  margin-bottom:50px;
+}
+
+
 .knee__fascia{
   text-align:center;
   position: relative;
@@ -257,17 +291,6 @@ opacity:0.8;
 .fascia .sec-title:before,
 .fascia-herapy .sec-title:before{
   background:yellow;
-}
-
-.fascia-img{
-  display:flex;
-  justify-content:space-between;
-  margin-top:50px;
-}
-
-.fascia-img__image{
-  width:28%;
-  object-fit:cover;
 }
 
 
@@ -369,7 +392,7 @@ opacity:0.8;
 
 .profile__name{
   padding:3px 10px;
-  margin-bottom:10px;
+  margin-bottom:15px;
   border-left:solid 5px #36A3D5;
   font-size:24px;
 }
@@ -379,8 +402,12 @@ opacity:0.8;
 }
 
 .profile__career,.profile__text{
-  padding:0 0 10px 10px;
+  padding:0 0 13px 10px;
   line-height:1.7
+}
+
+.profile__text__example{
+  padding-top:20px;
 }
 
 
@@ -473,7 +500,7 @@ opacity:0.8;
 
 .img__left{
   float:left;
-  margin:0 20px 20px 0;
+  margin:0 20px 50px 0;
 }
 
 .why__fascia{
