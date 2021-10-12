@@ -11,6 +11,7 @@
 
 body{
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
+  color:#333;
   font-size:16px;
   line-height:1.7
 }
@@ -20,19 +21,28 @@ a{
   display:inline-block;
 }
 
+a:hover{
+  opacity:0.7;
+}
+
 li{
   list-style:none;
 }
 
 img{
   width:100%;
-  vertical-align:center;
+  vertical-align:bottom;
 }
 
 .container{
   width:1140px;
   margin:0 auto;
   padding:50px 0;
+}
+
+#fascia,#voice,#suitable,#profile-thought,#select,#treatment{
+  margin-top:-95px;
+  padding-top:95px;
 }
 
 .sec-title{
@@ -55,14 +65,115 @@ img{
   opacity:0.8;
 }
 
+
+
 header{
-  width:1140px;
+  width:100%;
+  background:#fff;
   margin:0 auto;
+  position:fixed;
+  top:0%;;
+  box-shadow:0px 1px rgba(195,195,195,0.2);
+  z-index:5;
 }
+
+.header-top{
+  width:1140px;
+  height:65px;
+  margin:0 auto;
+  align-items:center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.left__logo{
+  width:330px;
+}
+
+.header-top__right{
+  display:flex;
+}
+
+.right__tel{
+  margin-right:50px;
+  line-height:23px;
+}
+
+.right__tel__btn{
+  display:flex;
+}
+
+.fa-phone-square-alt{
+  font-size:50px;
+  margin-right:10px;
+  color:#36A3D5
+}
+
+.right__tel__time{
+  font-weight:bold;
+  font-size:12px;
+  color:#333;
+}
+
+.right__tel__number{
+  font-weight:bold;
+  font-size:25px;
+  color:#36A3D5;
+}
+
+.right__mail__btn{
+  display:inline-block;
+  margin-top:3px;
+  padding:7px 15px;
+  background:orange;
+  color:#fff;
+  font-size:16px;
+  font-weight:bold;
+  border-radius:4px;
+  box-shadow:2px 2px rgba(195,195,195,0.2);
+}
+
+.fa-envelope{
+  margin-right:5px;
+  font-size:20px;
+}
+
+
+.header-menu{
+  width:1140px;
+  height:30px;
+  margin:0 auto;
+  align-items:center;
+}
+
+.header-menu__list{
+  display:flex;
+}
+
+.header-menu__list__item{
+  display:inline-block;
+  width:calc(100% / 7);
+  font-size:14px;
+  text-align:center;
+  border-left:solid 1px #c3c3c3;
+}
+
+.header-menu__list a{
+  color:#3D71B8
+}
+
+.header-menu__list__item:last-child{
+  border-right:solid 1px #c3c3c3;
+}
+
+
 
 .lp-top__cp{
   width:100%;
+  margin-top:95px;
 }
+
+
 
 .worries__useful{
   font-size:24px;
@@ -85,6 +196,8 @@ header{
   border-width: 30px 60px 0 60px;
   border-color:#fff transparent transparent transparent;
 }
+
+
 
 .knee__fascia{
   text-align:center;
@@ -135,6 +248,12 @@ border-color: #36A3D5  transparent transparent transparent;
 opacity:0.8;
 }
 
+.knee .container{
+  padding-bottom:0;
+}
+
+
+
 .fascia-img__images{
   display:flex;
   justify-content:space-between;
@@ -145,7 +264,15 @@ opacity:0.8;
   object-fit:cover;
 }
 
+
+
+.suitable__content{
+  display:flex;
+  justify-content: space-between;
+}
+
 .suitable__lists{
+  width:48%;
   border:solid 1px #36A3D5;
   border-radius:12px;
   margin-bottom:50px;
@@ -155,8 +282,9 @@ opacity:0.8;
   color:#fff; 
   border-radius:10px 10px 0 0;
   background:#36A3D5;
-  font-size:24px;
+  font-size:22px;
   padding:10px;
+  text-align:center;
 }
 
 .suitable__list{
@@ -180,9 +308,7 @@ opacity:0.8;
   font-weight:bold;
 }
 
-.guidance{
-  background:#36A3D5;
-}
+
 
 .profile-top,.thought-top{
   font-size:24px;
@@ -190,7 +316,9 @@ opacity:0.8;
   margin:50px 0;
   padding:10px 50px;
   color:#fff;;
-  background:linear-gradient(to right,#36A3D5,#3D71B8);
+  background: -moz-linear-gradient(left, #ffffff 0%, #36A3D5 20%, #36A3D5 80%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #ffffff 0%, #36A3D5 20%, #36A3D5 80%, #ffffff 100%);
+  background: linear-gradient(to right, #ffffff 0%, #36A3D5 20%, #36A3D5 80%, #ffffff 100%);
 }
 
 .profile{
@@ -365,7 +493,7 @@ opacity:0.8;
   padding: 0 10px;
   color: #fff;
   border-radius: 10px;
-  background: #0075a9;
+  background: #36A3D5;
 }
 
 .fa-hand-point-right {
@@ -381,7 +509,11 @@ opacity:0.8;
   content: '';
   border-width: 7px 0 7px 12px;
   border-style: solid;
-  border-color: transparent transparent transparent #0075a9;
+  border-color: transparent transparent transparent #36A3D5;
+}
+
+.feature__img{
+  width:320px;
 }
 
 .why__dr-voice{
@@ -425,10 +557,151 @@ opacity:0.8;
   margin-top:10px;
 }
 
+
+
+.treatment{
+  background-color:rgba(54,163,213,0.1);
+}
+
 .treatment__time__title{
   font-size:22px;
+}
+
+.treatment__timme__text{
+  padding:0 0 30px 30px;
 }
 
 .fa-stopwatch{
   margin-right:10px;
 }
+
+
+.treatment__time,.slider {/*横幅90%で左右に余白を持たせて中央寄せ*/
+  width:90%;
+  margin:0 auto;
+}
+
+.slider img {
+   width:100%;/*スライダー内の画像を横幅100%に*/
+   height:400px;
+   object-fit:cover;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+   margin:0 50px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+   position: absolute;/*絶対配置にする*/
+   top: 42%;
+   cursor: pointer;/*マウスカーソルを指マークに*/
+   outline: none;/*クリックをしたら出てくる枠線を消す*/
+   border-top: 5px solid #36A3D5;/*矢印の色*/
+   border-right:5px solid #36A3D5;/*矢印の色*/
+   height: 30px;
+   width: 30px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+   left: -5%;
+   transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+   right: -5%;
+   transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align:center;
+ margin:20px 0 0 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+   color: transparent;
+   outline: none;
+   width:8px;/*ドットボタンのサイズ*/
+   height:8px;/*ドットボタンのサイズ*/
+   display:block;
+   border-radius:50%;
+   background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+   background:#36A3D5;/*ドットボタンの現在地表示の色*/
+}
+
+.treatment__text{
+  padding:10px 30px;
+  font-size:15px;
+  background:#fff
+}
+
+
+.treatment__title{
+  margin:0 auto 10px;
+  text-align:center;
+  font-size:22px;
+  color:#3D71B8;
+  border-bottom:solid 3px #36A3D5
+}
+
+.treatment__text{
+  padding:10px 30px;
+}
+
+footer{
+  background: -webkit-linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  background: linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  color:#fff;
+}
+
+footer .container{
+  display:flex;
+}
+
+.footer__left{
+  width:50%;
+  border-right:solid 1px #fff;
+}
+
+.footer__logo{
+  width:250px;
+}
+
+.footer__text{
+  margin:20px 0;
+  font-size:14px;
+}
+
+.footer__text__li{
+  border-left:solid 5px #fff;
+  padding-left:8px;
+  margin-bottom:15px;
+}
+
+.footer__right{
+  width:50%;
+  text-align:center;
+}
+
+.footer__copy{
+  font-size:12px;
+  text-align:center;
+  padding-bottom:30px;
+}
+
+

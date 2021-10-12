@@ -6,32 +6,44 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="assets/style.css">
 		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
 	</head>
+
 	<body>
 		<header>
 			<div class="header-top">
 				<div class="header-top__left">
-					<a href="#"><img src="assets/img/logo.png"></a>
+					<a class="left__logo" href="#"><img src="assets/img/logo.png"></a>
 				</div>
+
 				<div class="header-top__right">
 					<div class="right__tel">
-						<a href="tel:090-4607-3624">
-							<p class="right__tel__number">090-4607-362</p>
-							<p class="right__tel__number">受付：9:00-22:00</p>
+						<a class="right__tel__btn" href="tel:090-4607-3624">
+							<p ><i class="fas fa-phone-square-alt"></i></p>
+							<div class="right__tel__text">
+								<p class="right__tel__time">診察予約はお電話：9:00-22:00</p>
+								<p class="right__tel__number">090-4607-362</p>
+							</div>	
 						</a>
 					</div>
-					<div class="header-right__mail">
-						<a href="#">メールでのご予約</a>
+					<div class="right__mail">
+						<a class="right__mail__btn" href="#"><i class="far fa-envelope"></i>メールでのご予約</a>
 					</div>
 				</div>
+			</div>
 				
-				<div class="header-menu">
-					<ul>
-						<li>メニューを入れる</li>
-					</ul>
-				</div>
+			<div class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__list__item"><a href=""></span>トップページ</a></li>
+					<li class="header-menu__list__item"><a href="#fascia">Fascia療法とは</a></li>
+					<li class="header-menu__list__item"><a href="#voice">お客様の声</a></li>
+					<li class="header-menu__list__item"><a href="#suitable">こんな方に</a></li>
+					<li class="header-menu__list__item"><a href="#profile-thought">院長プロフィール</a></li>
+					<li class="header-menu__list__item"><a href="#select">選ばれる理由</a></li>
+					<li class="header-menu__list__item"><a href="#treatment">施術の流れ</a></li>
+				</ul>
 			</div>
 		</header>
 
@@ -103,7 +115,7 @@
 	<p>24時間対応!</p>
 	<p>※施術中はお電話に出られない事がございます。必ずこちらから折り返しのお電話を 致しますのでメッセージの方を残していただければと思います。</p>
 
-===================================================================================================================================================ごめんちょっとこのままにしてby将希
+=================================================================ごめんちょっとこのままにしてby将希
 
 		
 			<section class="knee">
@@ -121,7 +133,7 @@
 				</div>
 			</section>
 		
-
+			<div id="fascia"></div>
 			<section class="fascia">
 				<div class="container">
 					<h2 class="sec-title">NHKでも注目されたFasciaとは？</h2>
@@ -146,6 +158,7 @@
 				</div>
 			</section>
 
+			<div id="voice"></div>
 			<section class="voice">
 				<div class="container">
 					<h2 class="sec-title">患者様のお声(1名)</h2>
@@ -155,32 +168,35 @@
 				</div>
 			</section>
 
+			<div id="suitable"></div>
 			<section class="suitable">
 				<div class="container">
 					<h2 class="sec-title">整体院神威 こんな方は N G</h2>
-					<div class="suitable__lists">
-						<p class="suitable__list__item">ただし、以下のような方は当院には向いておりません。</p>
-						<ul class="suitable__list">
-							<li class="suitable__list__li"><i class="fas fa-times"></i>本気で症状の根本的な改善を求めてない方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>細かい説明はいいから早く施術してくれと思っている方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>1回のみの施術で改善しようとする方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>マッサージ目当てでその場の快楽を求める方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>ご自身の身体にお金をかけられない方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>ホームケア指導をしてもやろうとせずに努力しない方</li>
-							<li class="suitable__list__li"><i class="fas fa-times"></i>当日にキャンセルする方や約束の時間を守れない方</li>
-						</ul>
-					</div>
-					<div class="suitable__lists">
-						<p class="suitable__list__item">しかし、以下のような方にはぜひ、当院をオススメ致します。</p>
-						<ul class="suitable__list">
-							<li class="suitable__list__li"><i class="far fa-circle"></i>病院・治療院でどこへ行っても治らなかった方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>予約時間を守れて当日キャンセルをしない方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>本気でこの痛みをなんとかしたいと思っている方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>私のアドバイスを聞いていただけてホームケアも頑張れる方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>変形性膝関節症と診断されて手術宣告を受けている方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>自分の症状に適したペースで通院可能な方</li>
-							<li class="suitable__list__li"><i class="far fa-circle"></i>ご自身の身体にお金をかけられる方</li>
-						</ul>
+					<div class="suitable__content">
+						<div class="suitable__lists">
+							<p class="suitable__list__item">以下のような方は当院には向いておりません。</p>
+							<ul class="suitable__list">
+								<li class="suitable__list__li"><i class="fas fa-times"></i>本気で症状の根本的な改善を求めてない方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>細かい説明はいいから早く施術してくれと思っている方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>1回のみの施術で改善しようとする方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>マッサージ目当てでその場の快楽を求める方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>ご自身の身体にお金をかけられない方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>ホームケア指導をしてもやろうとせずに努力しない方</li>
+								<li class="suitable__list__li"><i class="fas fa-times"></i>当日にキャンセルする方や約束の時間を守れない方</li>
+							</ul>
+						</div>
+						<div class="suitable__lists">
+							<p class="suitable__list__item">以下のような方にはぜひ、当院をオススメ致します。</p>
+							<ul class="suitable__list">
+								<li class="suitable__list__li"><i class="far fa-circle"></i>病院・治療院でどこへ行っても治らなかった方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>予約時間を守れて当日キャンセルをしない方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>本気でこの痛みをなんとかしたいと思っている方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>私のアドバイスを聞いていただけてホームケアも頑張れる方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>変形性膝関節症と診断されて手術宣告を受けている方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>自分の症状に適したペースで通院可能な方</li>
+								<li class="suitable__list__li"><i class="far fa-circle"></i>ご自身の身体にお金をかけられる方</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -205,7 +221,7 @@
 			</section>
 
 
-			<section class="profile-thought">
+			<section class="profile-thought" id="profile-thought">
 				<div class="container">
 					<h2 class="sec-title">自己紹介&私の想い</h2>
 
@@ -269,7 +285,7 @@
 				</div>
 			</section>
 
-			
+			<div id="select"></div>
 			<section class="select">
 				<div class="container">
 					<h2 class="sec-title">当院が予約待ちでも選ばれる理由</h2>
@@ -358,10 +374,15 @@
 
 								<div class="fascia-feature__item">
 									<h3 class="fascia-feature__title"><span class="fascia-feature__title__point"><i class="far fa-hand-point-right"></i>特徴２</span> NHKで紹介された「Fascia」を取り入れた当院独自の『Fascia 療法』で膝痛を改善させるから</h3>
-									<p>筋膜とは体の全てを覆っているネット状の繊維で、第二の骨格と言われるほど体を支える為に必要なもので、重要な働きをしています。<br>
-									原因のわからない痛みは、この筋膜が厚くなったり滑りが悪くなることで引き起こされていることが多いです。<br>
-									整体院神威では、医学博士も認めるFasciaを取り入れた当院独自の『Fascia 療法』で、心地良い圧で効率よく結合組織を緩めていきます。
-									その手技により痛みが改善するのが早く、今まで取れなかった痛みも改善でき、痛みに邪魔されない自由な生活を送れるようになります。</p>
+									<div class="feature__text">
+										<div class="feature__img img__right">
+											<img src="assets/img/feature.png">
+										</div>
+										<p>筋膜とは体の全てを覆っているネット状の繊維で、第二の骨格と言われるほど体を支える為に必要なもので、重要な働きをしています。<br>
+											原因のわからない痛みは、この筋膜が厚くなったり滑りが悪くなることで引き起こされていることが多いです。<br>
+											整体院神威では、医学博士も認めるFasciaを取り入れた当院独自の『Fascia 療法』で、心地良い圧で効率よく結合組織を緩めていきます。
+											その手技により痛みが改善するのが早く、今まで取れなかった痛みも改善でき、痛みに邪魔されない自由な生活を送れるようになります。</p>
+										</div>
 								</div>
 								
 								<div class="fascia-feature__item">
@@ -505,31 +526,67 @@
 				</div>
 			</section>
 
-
+			<div id="treatment"></div>
 			<section class="treatment">
 				<div class="container">
 				<h2 class="sec-title">膝痛改善を目的とした整体院 神威の施術方法</h2>
 				<p class="sec-title__sub">整体院 神威の施術の流れをご紹介致します。</p>
-				<p class="treaiment__time">
-					<span class="treatment__time__title"><i class="fas fa-stopwatch"></i>施術時間</span><br>
+				<div class="treatment__time">
+					<p class="treatment__time__title"><i class="fas fa-stopwatch"></i>施術時間</p>
+					<p class="treatment__timme__text">
 					初回：約90〜120分 (初回は施術前に痛みの原因を確認するためにカウンセリングや検査をしっかりしていきます)</p>
-				<div class="treatment__item"></div>
-				<h3>1 質問票の記入&カウンセリング</h3>
-				<p>まずは、あなたのお身体の状態を慢性腰痛に特化した質問票にご記入していただます。 そのあとに、その質問票の情報をもとに、「どこが?」「いつ頃から?」「どのようにすると痛むのか?」という点などを詳しく聞かせていただきます。 ご不明な点がございましたら、カウンセリング中にあなたが納得いくまで、ご相談ください。</p>
-				<h3>2 体の状態の検査</h3>
-				<p>質問票とカウンセリングにてお聞きした情報を元に、当院のみが行う膝痛に特化した検査方法を使って、膝痛の根本的な原因を突き止めます。 ここまで検査を行い、なぜあなたは膝痛が起きてしまったのか? 本当の膝痛の原因はどこか?をお伝えさせていただきます。そしてこの過程であなたの膝痛の原因を突き止めます。</p>
-				<h3>3 施術方針の説明</h3>
-				<p>あなたのお体を見させていただき検査をした結果をご説明させていただきます。 「どこの筋肉が悪いか」「どの内臓が疲れているか」「なぜ慢性腰痛を起こしているか?」などをあなたにお伝え致します。 私はあなたにご理解していただけるまでご説明をさせていただきます。 施術を受けていただくあなたにもわかっていただける事により、施術効果が上がります。 そしてそのあ
-				とに今後の通院ペース(期間)と何回通えば改善されて整体院を卒業できるのかを最初のご説明でお話をさせていただきます。</p>
+				</div>
 
-				<h3>4 施術スタート</h3>
-				<p>当院で行う施術では、その方の症状に適した施術方法をご提案させていただいております。 筋膜、骨格、内臓、神経といった深い部分まで調整をしていくのですが、全く痛みはなくリラックスしていただけるくらいの施術になります。ほとんどの方は眠気がきてしまうほどの気持ちのいい施術ですので、リラックスして受けていただけます。</p>
-		
-				<h3>5 施術後の確認、日常生活の注意点</h3>
-				<p>施術の前に行った検査をもう一度させていただき、施術前と施術後の変化を確認していきます。そして施術をさせていただいた事により、今身体の中で何が起こっているか。そして施術を受けた日から日常生活で気をつけていただきたい事をお伝えします。そしてその場であなたが疑問に思った事、不安に思った事などは全て教えてください。私は一生、整体院に通っていただきたい訳ではありません。あなたの症状が改善されて日常生活を豊かに暮らしていけるように、これから先はご自身で解決できるお身体と知識を身に付けていただきたいのです。 なので私は施術のみでその後のアドバイスをせずにあっさりと終わらせる事は一切致しません。あなたのお悩みや不安は私に全てお話しください。そして私と一緒に頑張りましょう!</p>
-		
-				<h3>6 施術終了</h3>
-				<p>お支払いと次回のご予約をしていただき終了になります。 もし、施術について日常的な事やホームケアなど、そして慢性腰痛について気になる事があればお気軽にご相談ください。 あなたがいくつもの病院、接骨院に通ってきて改善されなくて、落胆している気持ちから「膝痛」は「改善できるものなのだ」と感じていただけるまで私は全力で施術の方をさせていただきます。そして私自信も苦しんでいた膝痛というのはどういうものか私も体験をしているので、どこの整形外科や、接骨院、マッサージ屋さんよりもあなたの膝痛を理解する事ができて、丁寧な施術で改善をできる事を目標にしています。</p>
+				<ul class="slider">
+					<li>
+						<img src="assets/img/trearment1.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">1. 質問票の記入&カウンセリング</h3>
+							<p>まずは、あなたのお身体の状態を慢性腰痛に特化した質問票にご記入していただます。 そのあとに、その質問票の情報をもとに、「どこが?」「いつ頃から?」「どのようにすると痛むのか?」という点などを詳しく聞かせていただきます。 ご不明な点がございましたら、カウンセリング中にあなたが納得いくまで、ご相談ください。</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="assets/img/treatment2.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">2. 体の状態の検査</h3>
+							<p>質問票とカウンセリングにてお聞きした情報を元に、当院のみが行う膝痛に特化した検査方法を使って、膝痛の根本的な原因を突き止めます。 ここまで検査を行い、なぜあなたは膝痛が起きてしまったのか? 本当の膝痛の原因はどこか?をお伝えさせていただきます。そしてこの過程であなたの膝痛の原因を突き止めます。</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="assets/img/treatment3.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">3. 施術方針の説明</h3>
+							<p>あなたのお体を見させていただき検査をした結果をご説明させていただきます。 「どこの筋肉が悪いか」「どの内臓が疲れているか」「なぜ慢性腰痛を起こしているか?」などをあなたにお伝え致します。 私はあなたにご理解していただけるまでご説明をさせていただきます。 施術を受けていただくあなたにもわかっていただける事により、施術効果が上がります。 そしてそのあ
+							とに今後の通院ペース(期間)と何回通えば改善されて整体院を卒業できるのかを最初のご説明でお話をさせていただきます。</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="assets/img/treatment4.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">4. 施術スタート</h3>
+							<p>当院で行う施術では、その方の症状に適した施術方法をご提案させていただいております。 筋膜、骨格、内臓、神経といった深い部分まで調整をしていくのですが、全く痛みはなくリラックスしていただけるくらいの施術になります。ほとんどの方は眠気がきてしまうほどの気持ちのいい施術ですので、リラックスして受けていただけます。</p>
+						</div>
+					</li>
+					
+					<li>
+						<img src="assets/img/treatment5.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">5. 施術後の確認、日常生活の注意点</h3>
+							<p>施術の前に行った検査をもう一度させていただき、施術前と施術後の変化を確認していきます。そして施術をさせていただいた事により、今身体の中で何が起こっているか。そして施術を受けた日から日常生活で気をつけていただきたい事をお伝えします。そしてその場であなたが疑問に思った事、不安に思った事などは全て教えてください。私は一生、整体院に通っていただきたい訳ではありません。あなたの症状が改善されて日常生活を豊かに暮らしていけるように、これから先はご自身で解決できるお身体と知識を身に付けていただきたいのです。 なので私は施術のみでその後のアドバイスをせずにあっさりと終わらせる事は一切致しません。あなたのお悩みや不安は私に全てお話しください。そして私と一緒に頑張りましょう!</p>
+						</div>
+					</li>
+
+					<li>
+						<img src="assets/img/treatment6.jpeg">
+						<div class="treatment__text">
+							<h3 class="treatment__title">6. 施術終了</h3>
+							<p>お支払いと次回のご予約をしていただき終了になります。 もし、施術について日常的な事やホームケアなど、そして慢性腰痛について気になる事があればお気軽にご相談ください。 あなたがいくつもの病院、接骨院に通ってきて改善されなくて、落胆している気持ちから「膝痛」は「改善できるものなのだ」と感じていただけるまで私は全力で施術の方をさせていただきます。そして私自信も苦しんでいた膝痛というのはどういうものか私も体験をしているので、どこの整形外科や、接骨院、マッサージ屋さんよりもあなたの膝痛を理解する事ができて、丁寧な施術で改善をできる事を目標にしています。
+							</p>
+						</div>
+					</li>
 				</div>
 			</section>
 
@@ -549,7 +606,32 @@
 					<p>※ 施術中はお電話に出られない事がございます。必ずこちらから折り返しのお電話を 致しますのでメッセージの方を残して頂ければと思います。</p>
 				</div>
 			</section>
+		</main>
+			
+		<footer>
+			<div class="container">
+				<div class="footer__left">
+					<a class="footer__logo" href="#"><img src="assets/img/logo.png"></a>
+					<ul class="footer__text">
+						<li class="footer__text__li">住所　　　〒272-0023 千葉県市川市南八幡4-3-7グリーンターフ308号室</li>
+						<li class="footer__text__li">交通　　　本八幡駅（JR総武線 本八幡駅 南口を出て徒歩1分</li>
+						<li class="footer__text__li">電話　　　090-4607-3624</li>
+						<li class="footer__text__li">受付　　　9時～22時（不定休）</li>
+						<li class="footer__text__li">備考　　　完全予約制 時間外施術要相談</dd>
+				</div>
+				<div class="footer__right">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6478.433217333622!2d139.925732!3d35.720891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe4364e5eb86386f2!2z5pW05L2T6ZmiIOelnuWogSAtIEtBTVVJIC0!5e0!3m2!1sja!2sjp!4v1634025942269!5m2!1sja!2sjp" width="430" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+			<p class="footer__copy">&copy; 2021 整体院 神威. All Rights Reserved.</p>
+		</footer>
 
-	
-</body>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!--自作のJS-->
+		
+		<script src="js/min.js"></script>
+	</body>
 </html>
