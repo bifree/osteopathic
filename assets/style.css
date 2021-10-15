@@ -13,7 +13,8 @@ body{
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
   color:#333;
   font-size:16px;
-  line-height:1.7
+  line-height:1.7;
+  min-width:1140px;
 }
 
 a{
@@ -37,7 +38,7 @@ img{
 .container{
   width:1140px;
   margin:0 auto;
-  padding:50px 0;
+  padding:50px 10px;
 }
 
 #fascia,#voice,#suitable,#profile-thought,#select,#treatment{
@@ -74,7 +75,12 @@ img{
 }
 
 .marker-blue{
-  background: linear-gradient(transparent 75%, blue 0%);
+  background: linear-gradient(transparent 60%, blue 0%);
+  padding-bottom:2px
+}
+
+.marker-yellow{
+  background: linear-gradient(transparent 60%, yellow 0%);
   padding-bottom:2px
 }
 
@@ -86,17 +92,19 @@ img{
 
 
 header{
-  width:100%;
   background:#fff;
   margin:0 auto;
   position:fixed;
-  top:0%;;
+  top:0%;
+  left:0;
+  right:0;
   box-shadow:0px 1px rgba(195,195,195,0.2);
-  z-index:5;
+  z-index:6;
 }
 
 .header-top{
   width:1140px;
+  padding:0 10px;
   height:65px;
   margin:0 auto;
   align-items:center;
@@ -184,6 +192,11 @@ header{
   border-right:solid 1px #c3c3c3;
 }
 
+.sp-menu, .overlay{
+  display:none;
+}
+
+
 
 
 .lp-top__cp{
@@ -191,7 +204,46 @@ header{
   margin-top:95px;
 }
 
+.lp-top__sp{
+ display:none;
+}
 
+
+
+.checkmark {
+  padding: 10px 10px 10px 30px;
+	position:relative;
+  text-align: left;
+  font-size: 18px;
+  border-bottom: 2px dashed #ddd;
+}
+
+.checkmark:before,
+.checkmark:after{
+	content:"";
+	display:block;
+	position:absolute;
+}
+
+.checkmark:before{
+	width:16px;
+	height:16px;
+	background: #ffffff;
+  border:1px solid #000000;
+	left:0;
+	top:24px;
+}
+
+.checkmark:after{
+	border-left:2px solid #ff0000;
+	border-bottom:2px solid #ff0000;
+	width:18px;
+	height:5px;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	left:5px;
+	top:24px;
+}
 
 .worries__useful{
   font-size:24px;
@@ -273,12 +325,12 @@ header{
 
 .knee__triangle{
  margin:0 auto;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 30px 60px 0 60px;
-border-color: #36A3D5  transparent transparent transparent;
-opacity:0.8;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 60px 0 60px;
+  border-color: #36A3D5  transparent transparent transparent;
+  opacity:0.8;
 }
 
 .fascia,
@@ -328,7 +380,7 @@ opacity:0.8;
 
 .suitable__lists{
   width:48%;
-  margin-bottom:50px;
+ 
 }
 
 .suitable__list__item{
@@ -403,7 +455,6 @@ opacity:0.8;
 
 .profile__career,.profile__text{
   padding:0 0 13px 10px;
-  line-height:1.7
 }
 
 .profile__text__example{
@@ -501,10 +552,6 @@ opacity:0.8;
 .img__left{
   float:left;
   margin:0 20px 50px 0;
-}
-
-.why__fascia{
-  font-size:24px;
 }
 
 .why__fascia-feature {
@@ -714,6 +761,26 @@ opacity:0.8;
   padding:10px 30px;
 }
 
+
+
+.page-top{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+}
+
+.page-top__btn{
+  background: -webkit-linear-gradient(bottom left, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  background: linear-gradient(to top right, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  font-size:28px;
+  padding:15px;
+  border-radius:50%;
+  color:#fff;
+  border:solid 1px #fff;
+}
+
+
+
 footer{
   background: -webkit-linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
   background: linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
@@ -837,3 +904,178 @@ bottom: 0;
   background-color: rgba(255,255,255,0.9);
 }
 
+
+
+.price{
+  font-family:"Hiragino Sans","ヒラギノ角ゴシック","Meiryo","メイリオ",sans-serif;
+  background : -webkit-linear-gradient(90deg, rgba(31, 157, 254, 1) 0%, rgba(42, 167, 247, 1) 7.61%, rgba(69, 192, 230, 1) 30.37%, rgba(89, 210, 218, 1) 53.35%, rgba(101, 220, 210, 1) 76.49%, rgba(105, 224, 208, 1) 100%);
+  
+  background : linear-gradient(0deg, rgba(31, 157, 254, 1) 0%, rgba(42, 167, 247, 1) 7.61%, rgba(69, 192, 230, 1) 30.37%, rgba(89, 210, 218, 1) 53.35%, rgba(101, 220, 210, 1) 76.49%, rgba(105, 224, 208, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69E0D0',endColorstr='#1F9DFE' , GradientType=0);
+  text-align:center;
+  overflow: hidden;
+  color:#fff;
+  line-height:1.2;
+}
+
+.price__pc1{
+  padding-top:50px;
+  height:675px;
+  object-fit: cover;
+}
+
+.price__pc2{
+  width:570px;
+  margin-bottom:25px;
+}
+
+.price__contact{
+  display:flex;
+  justify-content: space-between;
+}
+
+.price__tel{
+  width:64%;
+}
+
+.price__tel__time{
+  font-size:30px;
+  margin-bottom:35px;
+  
+}
+
+.price__tel__caution{
+  text-align:left;
+  font-size:18.5px;
+}
+
+.price__mail{
+  width:30%;
+  margin:0 10px;
+}
+
+.price__mail__btn{
+  font-size:34px;
+
+}
+
+.price__mail__reserve{
+  display:flex;
+  justify-content: space-between;
+  margin:30px 20px 20px;
+}
+
+.price__cp5{
+  width:37%;
+}
+
+.price__mail__text{
+  width:58%;
+  color:#fff;
+}
+
+.price__mail__square{
+  width:92%;
+  padding:15px;
+  background:#fff;
+  color:#36A3D5;
+  border-radius:10px;
+  margin:0 auto;
+  position:relative;
+}
+
+.fa-caret-right{
+  position:absolute;
+  font-size:55px;
+  right:20px;
+  bottom:7px;
+}
+
+
+
+@media screen and (max-width:599px){
+  
+  .sp-menu{
+    display:inline-block;
+    position:fixed;
+    top:0;
+    right:0;
+    width:55px;
+    height:55px;
+    text-align:center;
+    align-items:center;background: -webkit-linear-gradient(bottom left, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+    background: linear-gradient(to top right, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+    cursor:pointer;
+  }
+
+  .sp-menu .open,.sp-menu .close{
+    color:#fff;
+    font-size:35px;
+    margin:0 auto;
+  }
+
+ 
+  .sp-menu #open.hide,
+  .sp-menu #close.hide
+  {
+    display:none;
+  }
+
+  .overlay{
+    position:fixed;
+    height:100vh;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(255,255,255,0.95);
+    text-align:center;
+    padding:64px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .6s;
+    z-index:5;
+    margin-top:55px;
+  }
+
+  .overlay.show{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+
+  .overlay ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  .overlay li{
+    margin-top:24px;
+    opacity:0;
+    transform:translateY(16px);
+    transition:opacity .3s,transform .3s;
+  }
+
+  .overlay.show li{
+    opacity:1;
+    transform:none;
+  }
+
+  .overlay.show li:nth-child(1){
+    transition-delay:.1s;
+  }
+
+  .overlay.show li:nth-child(2){
+    transition-delay:.2s;
+  }
+    
+  .overlay.show li:nth-child(3){
+    transition-delay:.3s;
+  }
+
+  .header-menu{
+    display:none;
+  }
+  
+}
