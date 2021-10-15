@@ -1068,8 +1068,8 @@ bottom: 0;
     width:60px;
     height:60px;
     text-align:center;
-    align-items:center;background: -webkit-linear-gradient(bottom left, #bff2ff 0%, #36A3D5 50%, #36A3D5 100%);
-    background: linear-gradient(to top right, #bff2ff 0%, #36A3D5 50%, #36A3D5 100%);
+    align-items:center;background: -webkit-linear-gradient(bottom left,  #36A3D5 0%, #3D71B8 100%);
+    background: linear-gradient(to top right,  #36A3D5 0%, #3D71B8 100%);
     cursor:pointer;
   }
 
@@ -1266,7 +1266,6 @@ bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     z-index: 1;
   }
   
@@ -1297,13 +1296,15 @@ bottom: 0;
 
   .why__content{
     margin:0 auto;
+    padding:0 40px;
 
   }
 
   .why__content__img{
-    width:350px;
+    width:100%;
     margin:0 auto;
     text-align:center;
+    
   } 
   
   .why__content__text{
@@ -1313,7 +1314,7 @@ bottom: 0;
 
   .why__fascia-feature {
     margin: 20px auto;;
-    padding:10px 10px 0;
+    padding:10px 40px 0;
 
   }
 
@@ -1327,7 +1328,7 @@ bottom: 0;
   }
   
   .feature__img{
-    width: 400pxpx;
+    width:100%;
   }
 
   .feature__text{
@@ -1336,7 +1337,7 @@ bottom: 0;
   }
   
   .why__dr-voice{
-    margin: 10px 60px;
+    margin: 10px 40px;
   }
   
   .dr-voice__item{
@@ -1483,19 +1484,24 @@ bottom: 0;
     margin-top:10px;
     padding:10px ;
   }
+
+  .price__mail__btn__sp .fa-caret-right{
+    font-size:45px;
+  }
   
   .btn__sp__arrow{
     position:absolute;
-    right:0px;
-    bottom:-8px;
-    color:#36A3D5
+    right:3px;
+    bottom:-5px;
+    color:#36A3D5;
+  
   }
 
   .price__sp5{
     position:absolute;
     width:35px;
     bottom:12px;
-    left:20px;
+    left:22px;
   }
   
   
