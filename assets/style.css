@@ -38,6 +38,11 @@ img{
   padding:50px 10px;
 }
 
+.sentence{
+  max-width:800px;
+  margin:0 auto;
+}
+
 #fascia,#voice,#suitable,#profile-thought,#select,#treatment{
   margin-top:-95px;
   padding-top:95px;
@@ -65,10 +70,12 @@ img{
 
 .red{
   color:red;
+  font-weight:bold;
 }
 
 .yellow{
   color:yellow;
+  font-weight:bold;
 }
 
 .marker-blue{
@@ -84,6 +91,7 @@ img{
 .size-big{
   font-size:20px;
   padding:5px 0;
+  font-weight:bold;
 }
 
 
@@ -537,7 +545,7 @@ header{
 
 .why__content__img img{
   height:100%;
-  object-fit:cover;;
+  object-fit:cover;
 }
 
 .img__right{
@@ -677,14 +685,14 @@ header{
 
 .slider img {
    width:100%;/*スライダー内の画像を横幅100%に*/
-   height:400px;
+   height:320px;
    object-fit:cover;
 }
 
 /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
 
 .slider .slick-slide {
-   margin:0 50px;
+   margin:0 70px;
 }
 
 /*矢印の設定*/
@@ -755,6 +763,7 @@ header{
 
 .treatment__text{
   padding:10px 30px;
+  height:500px;
 }
 
 
@@ -987,9 +996,10 @@ bottom: 0;
   bottom:7px;
 }
 
-.price__sp{
+.price__sp,.price__mail__btn__sp{
   display:none;
 }
+
 
 
 
@@ -1039,8 +1049,8 @@ bottom: 0;
   }
 
   .left__logo{
-    height:60px;
-    margin-top:5px;
+    height:40px;
+    margin-bottom:10px;
   }
 
   .header-top__right{
@@ -1065,8 +1075,8 @@ bottom: 0;
 
   .sp-menu-btn .open, .sp-menu-btn .close{
     color:#fff;
-    font-size:35px;
-    margin:0 auto;
+    font-size:30px;
+    margin:8px auto 0;
   }
 
  
@@ -1182,6 +1192,9 @@ bottom: 0;
     height:250px
   }
 
+  .suitable__list__item{
+    font-size:20px;
+  }
   .suitable__content{
     flex-direction:column;
   }
@@ -1247,7 +1260,7 @@ bottom: 0;
   
   .hexagon__cont {
     height: 100%;
-    font-size:22px;
+    font-size:20px;
     font-weight: bold;
     color: #fff;
     display: flex;
@@ -1279,21 +1292,34 @@ bottom: 0;
   
   .why__title__text{
     margin-left:15px;
-    font-size:22px;
+    font-size:20px;
+  }
+
+  .why__content{
+    margin:0 auto;
+
   }
 
   .why__content__img{
-    width:400px;
+    width:350px;
+    margin:0 auto;
+    text-align:center;
   } 
   
+  .why__content__text{
+    clear:both;
+    width:100%;
+  }
+
   .why__fascia-feature {
-    margin: 20px 60px;
+    margin: 20px auto;;
     padding:10px 10px 0;
+
   }
 
   .fascia-feature__title{
     padding:50px 0 10px;
-    font-size:22px;
+    font-size:20px;
   }
   
   .fascia-feature__title__point{
@@ -1301,7 +1327,12 @@ bottom: 0;
   }
   
   .feature__img{
-    width:400px;
+    width: 400pxpx;
+  }
+
+  .feature__text{
+    clear:both;
+
   }
   
   .why__dr-voice{
@@ -1340,13 +1371,11 @@ bottom: 0;
     margin-bottom:50px
   }
 
-
   .treatment__text{
     padding:10px 30px;
     font-size:15px;
-    background:#fff
+    height:auto;
   }
-  
   
   .treatment__title{
     margin:0 auto 10px;
@@ -1355,9 +1384,6 @@ bottom: 0;
     color:#3D71B8;
     border-bottom:solid 3px #36A3D5
   }
-  
-  
-  
   
   .page-top{
     bottom:10px;
@@ -1444,6 +1470,7 @@ bottom: 0;
   }
 
   .price__mail__btn__sp{
+    display:block;
     position:relative;
   }
 
@@ -1451,14 +1478,15 @@ bottom: 0;
     display:inline-block;
     background:#fff;
     color:#36A3D5;
-    font-size:25px;
+    font-size:22px;
+    width:93%;
     margin-top:10px;
-    padding:10px 60px;
+    padding:10px ;
   }
   
   .btn__sp__arrow{
     position:absolute;
-    right:-10px;
+    right:0px;
     bottom:-8px;
     color:#36A3D5
   }
@@ -1467,7 +1495,7 @@ bottom: 0;
     position:absolute;
     width:35px;
     bottom:12px;
-    left:10px;
+    left:20px;
   }
   
   
