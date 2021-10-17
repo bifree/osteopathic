@@ -1,19 +1,5 @@
 'use strict';
 
-// 特定の幅を超えたらリロード
-$(window).on("resize", function() {
-  var timer = false;
-  var w = window.innerWidth;
-  if(w > 599) {
-    if (timer !== false) {
-    clearTimeout(timer);
-    }
-    timer = setTimeout(function(){
-    window.location = window.location;
-    }, 1000);
-  }
-});
-
 $(function() {
   if (window.matchMedia( '(min-width: 600px)' ).matches) {
     $('.slider').slick({
@@ -76,17 +62,48 @@ $(function () {
   const open=document.getElementById('open');
   const overlay=document.querySelector('.sp-menu');
   const close=document.getElementById('close');
+  const header=document.querySelector('.header-top');
+  const menu=document.querySelector('.sp-menu__list');
+ 
 
   open.addEventListener('click',()=>{
     overlay.classList.add('show');
     open.classList.add('hide');
     close.classList.remove('hide');
-  
   });
+
 
   close.addEventListener('click',()=>{
     overlay.classList.remove('show');
     open.classList.remove('hide');
     close.classList.add('hide');
   });
+
+  
+  header.addEventListener('click',()=>{
+    overlay.classList.remove('show');
+    open.classList.remove('hide');
+    close.classList.add('hide');
+  });
+  
+  menu.addEventListener('click',()=>{
+    overlay.classList.remove('show');
+    open.classList.remove('hide');
+    close.classList.add('hide');
+  });
 }
+
+
+// 特定の幅を超えたらリロード
+$(window).on("resize", function() {
+  var timer = false;
+  var w = window.innerWidth;
+  if(w > 599) {
+    if (timer !== false) {
+    clearTimeout(timer);
+    }
+    timer = setTimeout(function(){
+    window.location = window.location;
+    }, 1000);
+  }
+});
