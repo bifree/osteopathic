@@ -57,6 +57,10 @@ img{
   position:relative;
 }
 
+.sec-title,.pc-menu,.sp-menu{
+  font-family:"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;;
+}
+
 .sec-title:before {
   position: absolute;
   bottom:0px;
@@ -117,8 +121,9 @@ header{
   justify-content: space-between;
 }
 
-.left__logo{
-  width:330px;
+
+.left__logo img{
+  height:48px;
 }
 
 .header-top__right{
@@ -218,7 +223,6 @@ header{
   padding: 10px 10px 10px 30px;
 	position:relative;
   text-align: left;
-  font-size: 18px;
   border-bottom: 2px dashed #ddd;
 }
 
@@ -235,7 +239,7 @@ header{
 	background: #ffffff;
   border:1px solid #000000;
 	left:0;
-	top:24px;
+	top:18px;
 }
 
 .checkmark:after{
@@ -245,8 +249,8 @@ header{
 	height:5px;
 	-webkit-transform:rotate(-45deg);
 	transform:rotate(-45deg);
-	left:5px;
-	top:24px;
+	left:3px;
+	top:18px;
 }
 
 .worries__useful{
@@ -303,6 +307,7 @@ header{
   display:inline-block;
   padding:5px;
   font-size:46px;
+  font-style:italic;
   color:blue;
   background: linear-gradient(transparent 40%, yellow 0%);
 }
@@ -461,8 +466,9 @@ header{
   padding:0 0 13px 10px;
 }
 
-.profile__text__example{
+.profile__example{
   padding-top:20px;
+  display:flex;
 }
 
 
@@ -490,8 +496,8 @@ header{
 }
 
 .hexagon {
-  width: 60px;
-  height: 35px;
+  width: 50px;
+  height: 30px;
   background:#36A3D5;
   position: relative;
 }
@@ -1038,13 +1044,24 @@ span.required {
     display:inline-block;
   }
 
+  .sp-none{
+    display:none;
+  }
+
   .container{
     width:100%;
     padding:50px 20px;
   }
 
   .sec-title{
-    font-size:24px;
+    font-size:22px;
+    padding-bottom:10px;
+    margin-bottom:30px;
+  }
+
+  .sec-title:before {
+    left: calc(50% - 150px);
+    width: 300px;
   }
   
   .size-big{
@@ -1059,8 +1076,7 @@ span.required {
   }
 
   .left__logo img{
-    height:30px;
-    width:auto;
+    height:35px;
     margin-bottom:10px;
   }
 
@@ -1202,51 +1218,50 @@ span.required {
    width:100%;
    margin-top:60px;
   }
-  
-  
-  .checkmark {
-    font-size: 16px;
-  }
-  
-
+    
   .worries__useful{
-    font-size:22px;
+    font-size:18px;
   }
 
   .knee__fascia__text{
-    font-size:20px;
+    font-size:16px;
   }
   
   .knee__fascia__name{
-    font-size:32px;
+    font-size:22px;
     color:blue;
   }
 
   .voice__content{
-    text-align:center;
-    width:420px;
-    margin:0 auto;
-    padding:30px;
-    background:#fff;
-    border-radius:10px;
+    width:330px;
   }
   
   .voice__youtube{
-    display:inline-block;
-    margin:0 auto;
-    width:380px;
-    height:250px
+    width:270px;
+    height:200px
   }
 
   .suitable__list__item{
-    font-size:20px;
+    font-size:18px;
   }
   .suitable__content{
     flex-direction:column;
   }
-  
+
   .suitable__lists{
     width:100%;
+    font-size:14px;
+  }
+  .suitable__list__li{
+    position:relative;
+    padding-left:25px;
+  }
+
+  .suitable__list__li .fa-times,
+  .suitable__list__li .fa-circle{ 
+    position:absolute;
+    top:5px;
+    left:-5px;
   }
 
   .suitable__lists:first-child{
@@ -1254,7 +1269,8 @@ span.required {
   }
  
   .profile-top,.thought-top{
-    font-size:22px;
+    font-size:18px;
+    padding:10px 30px;
   }
   
   .profile{
@@ -1262,7 +1278,7 @@ span.required {
   }
   
   .profile__img{
-    width:50%;
+    width:45%;
     float:right;
     margin:0 0 10px 10px;
   }
@@ -1272,9 +1288,10 @@ span.required {
   }
   
   .profile__name{
-    margin-bottom:15px;
+    margin-bottom:20px;
     border-left:solid 5px #36A3D5;
-    font-size:20px;
+    font-size:18px;
+    padding:10px 10px
   }
 
   .pfofile__name__sub{
@@ -1289,24 +1306,25 @@ span.required {
     padding:0 0 13px 5px;
   }
   
-  .profile__text__example{
-    padding-top:20px;
-  }
-  
   .sec-title__sub{
-    font-size:22px;
+    font-size:16px;
+  }
+
+  .why-title{
+    display:block;
+    position:relative;
   }
   
   .hexagon {
-    width: 60px;
-    height: 35px;
+    width: 42px;
+    height: 25px;
     background:#36A3D5;
-    position: relative;
+    position:absolute;
   }
   
   .hexagon__cont {
     height: 100%;
-    font-size:20px;
+    font-size:18px;
     font-weight: bold;
     color: #fff;
     display: flex;
@@ -1336,8 +1354,8 @@ span.required {
   }
   
   .why__title__text{
-    margin-left:15px;
-    font-size:20px;
+    margin-left:55px;
+    font-size:18px;
   }
 
   .why__content{
@@ -1366,7 +1384,7 @@ span.required {
 
   .fascia-feature__title{
     padding:50px 0 10px;
-    font-size:20px;
+    font-size:18px;
   }
   
   .fascia-feature__title__point{
@@ -1400,7 +1418,7 @@ span.required {
   }
   
   .dr-voice__text__title{
-    font-size:18px;
+    font-size:13px;
   }
   
   .dr-voice__text__neme{
@@ -1411,10 +1429,20 @@ span.required {
   }
   
   .dr-voice__text__clinic{
+    font-size:14px;
+  }
+  
+
+
+  .treatment__time__title{
     font-size:16px;
   }
   
   .treatment__list{
+    margin-bottom:100px
+  }
+
+  .treatment__list:last-child{
     margin-bottom:50px
   }
 
@@ -1467,6 +1495,10 @@ span.required {
   
   .footer__right{
     width:100%;
+  }
+
+  .footer-map{
+    width:300px;
   }
   
   .footer__copy{
@@ -1529,14 +1561,14 @@ span.required {
     display:inline-block;
     background:#fff;
     color:#36A3D5;
-    font-size:22px;
+    font-size:16px;
     width:93%;
     margin-top:10px;
     padding:10px ;
   }
 
   .price__mail__btn__sp .fa-caret-right{
-    font-size:45px;
+    font-size:30px;
   }
   
   .btn__sp__arrow{
@@ -1549,10 +1581,12 @@ span.required {
 
   .price__sp5{
     position:absolute;
-    width:35px;
+    width:25px;
     bottom:12px;
     left:22px;
   }
+  
+
   
   .bottom__contact{
     display:flex;
@@ -1600,4 +1634,11 @@ span.required {
     padding-right:8px;
   }
 
+  .knee,.treatment{
+    background-position:left;
+  }
+
+  .knee:after{
+    background:rgba(255,255,255,0.);
+  }
 }
