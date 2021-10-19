@@ -1278,11 +1278,15 @@ span.required {
     font-size:16px;
   }
 
+  .why__item{
+    padding:0;
+  }
+
   .why-title{
     display:block;
     position:relative;
   }
-  
+
   .hexagon {
     width: 42px;
     height: 25px;
