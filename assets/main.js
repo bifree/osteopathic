@@ -94,16 +94,3 @@ $(function () {
 }
 
 
-// 特定の幅を超えたらリロード
-$(window).on("resize", function() {
-  var timer = false;
-  var w = window.innerWidth;
-  if(w > 599) {
-    if (timer !== false) {
-    clearTimeout(timer);
-    }
-    timer = setTimeout(function(){
-    window.location = window.location;
-    }, 1000);
-  }
-});
