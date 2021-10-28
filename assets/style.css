@@ -366,11 +366,16 @@ header{
 
 .voice__item{
   text-align:center;
-  width:47%;
-  padding:30px;
+  width:48%;
   background:#fff;
   border-radius:10px;
-  margin-bottom:20px;
+  margin:20px 0;
+}
+
+.voice__title{
+  color:#36A3D5;
+  padding:5px 15px;
+  font-size:24px;
 }
 
 .voice__youtube{
@@ -385,10 +390,58 @@ header{
 
 .caution{
   font-size:12px;
-  color:#c3c3c3;
+  color:#8b8b8b;
   margin-top:10px;
 }
 
+.voice__q{
+  position: relative;
+  overflow: hidden;
+  padding:10px 10px 10px 60px;
+  border: 1px solid #36A3D5;
+  text-align:left;
+  margin-top:30px;
+}
+
+.voice__q:before {
+  position: absolute;
+  top: -150%;
+  left: -150px;
+  width: 200px;
+  height: 300%;
+  content: '';
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background:#36A3D5;
+}
+
+.voice__q__icon{
+  position:absolute;
+  top:15px;
+  left:15px;
+  color:#fff;
+  font-size:22px;
+}
+
+.voice__a{
+  text-align:left;
+  padding:10px;
+  font-size:18px;
+}
+
+.voice__more{
+  display:inline-block;
+  background:#36A3D5;
+  padding:5px 15px;
+  color:#fff;
+  border-radius:4px;
+  margin:30px 0;
+  cursor:pointer;
+}
+
+.voice__more .fa-chevron-down{
+  margin-left:5px;
+}
 
 
 .suitable__content{
@@ -1237,20 +1290,28 @@ span.required {
   .voice__content{
     flex-direction:column;
   }
-  
+ 
   .voice__item{
-    text-align:center;
     width:100%;
-    padding:30px;
-    background:#fff;
-    border-radius:10px;
-    margin-bottom:20px;
   }
   
-  .voice__youtube{
-    width:100%;
-    height:55vw;
+  .voice__title{
+    font-size:18px;
   }
+  
+  
+  .voice__name{
+    font-size:16px;
+  }
+  
+  .voice__q__icon{
+    font-size:20px;
+  }
+  
+  .voice__a{
+    font-size:16px;
+  }
+  
 
   .suitable__list__item{
     font-size:18px;
@@ -1564,5 +1625,10 @@ span.required {
 
   .knee:after{
     background:rgba(255,255,255,0.9);
+  }
+
+  .fascia:after,
+  .fascia-herapy:after{
+    background:rgba(255,255,255,0.3)
   }
 }
