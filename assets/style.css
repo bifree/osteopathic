@@ -254,6 +254,7 @@ header{
 }
 
 .worries__useful{
+  display:none;
   font-size:24px;
   color:#fff;
   text-align:center;
@@ -263,6 +264,7 @@ header{
 }
 
 .worries__useful:before{
+  display:none;
   content:"";
   top:0;
   left:calc(50% - 60px);
@@ -357,16 +359,28 @@ header{
 
 
 .voice__content{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.voice__item{
   text-align:center;
-  width:560px;
-  margin:0 auto;
-  padding:30px;
+  width:48%;
   background:#fff;
   border-radius:10px;
+  margin:20px 0;
+}
+
+.voice__title{
+  color:#36A3D5;
+  padding:5px 15px;
+  font-size:24px;
 }
 
 .voice__youtube{
-  display:inline-block;
+  width:100%;
+  height:300px;
 }
 
 .voice__name{
@@ -376,10 +390,58 @@ header{
 
 .caution{
   font-size:12px;
-  color:#c3c3c3;
+  color:#8b8b8b;
   margin-top:10px;
 }
 
+.voice__q{
+  position: relative;
+  overflow: hidden;
+  padding:10px 10px 10px 60px;
+  border: 1px solid #36A3D5;
+  text-align:left;
+  margin-top:30px;
+}
+
+.voice__q:before {
+  position: absolute;
+  top: -150%;
+  left: -150px;
+  width: 200px;
+  height: 300%;
+  content: '';
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background:#36A3D5;
+}
+
+.voice__q__icon{
+  position:absolute;
+  top:15px;
+  left:15px;
+  color:#fff;
+  font-size:22px;
+}
+
+.voice__a{
+  text-align:left;
+  padding:10px;
+  font-size:18px;
+}
+
+.voice__more{
+  display:inline-block;
+  background:#36A3D5;
+  padding:5px 15px;
+  color:#fff;
+  border-radius:4px;
+  margin:30px 0;
+  cursor:pointer;
+}
+
+.voice__more .fa-chevron-down{
+  margin-left:5px;
+}
 
 
 .suitable__content{
@@ -444,31 +506,33 @@ header{
 }
 
 .profile__img{
-  width:40%;
+  width:35%;
 }
 
 .profile__content{
-  width:55%;
+  width:60%;
 }
 
 .profile__name{
-  padding:3px 10px;
-  margin-bottom:15px;
+  padding:7px 15px;
+  margin-bottom:30px;
   border-left:solid 5px #36A3D5;
-  font-size:24px;
+  font-size:26px;
 }
 
 .profile__name__clinic{
-  font-size:20px;
+  font-size:24px;
 }
 
 .profile__career,.profile__text{
   padding:0 0 13px 10px;
+  font-size:18px;
 }
 
 .profile__example{
   padding-top:20px;
   display:flex;
+  font-size:18px;
 }
 
 
@@ -677,7 +741,7 @@ header{
   font-size:22px;
 }
 
-.treatment__timme__text{
+.treatment__time__text{
   padding:0 0 30px 30px;
 }
 
@@ -775,25 +839,6 @@ header{
 
 
 
-.page-top{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  z-index:6;
-}
-
-.page-top__btn{
-  background: -webkit-linear-gradient(bottom left, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
-  background: linear-gradient(to top right, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
-  font-size:28px;
-  padding:15px;
-  border-radius:50%;
-  color:#fff;
-  border:solid 1px #fff;
-}
-
-
-
 footer{
   background: -webkit-linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
   background: linear-gradient( #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
@@ -816,11 +861,19 @@ footer .container{
 .footer__text{
   margin:20px 0;
   font-size:14px;
+  display:flex;
+  flex-wrap:wrap;
 }
 
-.footer__text__li{
+.footer__text__dt{
   border-left:solid 5px #fff;
   padding-left:8px;
+  margin-bottom:15px;
+  width:15%;
+}
+
+.footer__text__dd{
+  width:85%;
   margin-bottom:15px;
 }
 
@@ -829,12 +882,41 @@ footer .container{
   text-align:center;
 }
 
+.footer__map{
+  width:430px;
+  height:275px;
+}
+
 .footer__copy{
   font-size:12px;
   text-align:center;
   padding-bottom:30px;
 }
 
+
+
+.page-top{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:6;
+}
+
+.page-top__btn{
+  background: -webkit-linear-gradient(bottom left, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  background: linear-gradient(to top right, #bff2ff 0%, #36A3D5 75%, #36A3D5 100%);
+  font-size:28px;
+  padding:15px;
+  border-radius:50%;
+  color:#fff;
+  border:solid 1px #fff;
+}
+
+
+
+.worries{
+  background:rgba(54,163,213,0.03);
+}
 
 .knee{
   background-image:url("../assets/img/back3.jpg");
@@ -925,18 +1007,17 @@ bottom: 0;
   text-align:center;
   overflow: hidden;
   color:#fff;
-  background-image:url("../assets/img/price-pc-back.png");
-  background-size:cover;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position:lert;
-  padding:50px 0;
-  text-align:center;
 }
 
 .price__pc{
   display:block;
   margin:0 auto;
+  background-image:url("../assets/img/price-pc-back.png");
+  background-size:cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:left;
+  padding:50px 0;
 }
 
 .price__pc1,.price__pc2{
@@ -959,7 +1040,6 @@ bottom: 0;
   background-size: cover;
   background-position:center;
   text-align:center;
-
 }
 
 .price__pc4{
@@ -969,11 +1049,54 @@ bottom: 0;
 .price__pc6{
   width:300px;
   padding-top:30px;
+  display:block;
+  margin:0 auto;
 }
 
 .price__pc7{
   width:900px;
 }
+
+.price__limited{
+  font-size:42px;
+}
+
+.price__limited__number{
+  font-size:72px;
+  font-weight:600;
+}
+
+
+.price__pc8{
+  width:800px;
+  margin:0 auto;
+  margin-bottom:20px;
+}
+
+.price__people{
+  height:150px;
+  align-items:center;
+  color:yellow;
+  font-size:58px;
+}
+
+.price__people__number{
+  display:inline-block;
+  background-image:url("../assets/img/price-pc9.png");
+  background-position:center;
+  background-size:150px 150px;
+  height:150px;
+  width:150px;
+  font-size:78px;
+  font-weight:600;
+  color:#3D71B8
+}
+
+.price__sp{
+  display:none;
+}
+
+
 
 .wp-form form {
   width: 600px;
@@ -1022,7 +1145,7 @@ span.required {
   }
 
   .sec-title{
-    font-size:22px;
+    font-size:19.5px;
     padding-bottom:10px;
     margin-bottom:30px;
   }
@@ -1188,26 +1311,48 @@ span.required {
   }
     
   .worries__useful{
-    font-size:18px;
+    font-size:20px;
+    padding:40px 20px 30px;
   }
 
+  .knee__fascia{
+    padding:50px 20px;
+  }
+  
   .knee__fascia__text{
     font-size:16px;
   }
   
   .knee__fascia__name{
-    font-size:22px;
+    font-size:24px;
     color:blue;
   }
 
   .voice__content{
-    width:330px;
+    flex-direction:column;
+  }
+ 
+  .voice__item{
+    width:100%;
   }
   
-  .voice__youtube{
-    width:270px;
-    height:200px
+  .voice__title{
+    font-size:18px;
   }
+  
+  
+  .voice__name{
+    font-size:16px;
+  }
+  
+  .voice__q__icon{
+    font-size:20px;
+  }
+  
+  .voice__a{
+    font-size:16px;
+  }
+  
 
   .suitable__list__item{
     font-size:18px;
@@ -1246,7 +1391,7 @@ span.required {
   }
   
   .profile__img{
-    width:45%;
+    width:38%;
     float:right;
     margin:0 0 10px 10px;
   }
@@ -1256,24 +1401,33 @@ span.required {
   }
   
   .profile__name{
-    margin-bottom:20px;
+    margin-bottom:30px;
     border-left:solid 5px #36A3D5;
-    font-size:18px;
-    padding:10px 10px
+    font-size:20px;
+    padding:15px;
   }
 
   .pfofile__name__sub{
-    font-size:16px;
+    font-size:18px;
   }
   
   .profile__name__clinic{
-    font-size:16px;
+    font-size:18px;
   }
-  
+
   .profile__career,.profile__text{
     padding:0 0 13px 5px;
+    font-size:14px;
   }
   
+  .profile__example{
+    padding-top:20px;
+    display:flex;
+    font-size:14px;
+  }
+
+ 
+
   .sec-title__sub{
     font-size:16px;
   }
@@ -1288,61 +1442,31 @@ span.required {
   }
 
   .hexagon {
-    width: 42px;
-    height: 25px;
-    background:#36A3D5;
+    width: 35px;
+    height: 20px;
     position:absolute;
   }
   
   .hexagon__cont {
-    height: 100%;
-    font-size:18px;
-    font-weight: bold;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-  
-  .hexagon::before,
-  .hexagon::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background:#36A3D5;
-    z-index: 0;
-  }
-  
-  .hexagon::before {
-    transform: rotate(60deg);
-  }
-  
-  .hexagon::after {
-    transform: rotate(-60deg);
+    font-size:16px;
   }
   
   .why__title__text{
-    margin-left:55px;
-    font-size:18px;
+    margin-left:45px;
+    font-size:16px;
   }
 
   .why__content{
     margin:0 auto;
     padding:0 40px;
-
   }
 
   .why__content__img{
     width:100%;
     margin:0 auto;
     text-align:center;
-    
   } 
-  
+ 
   .why__content__text{
     clear:both;
     width:100%;
@@ -1355,12 +1479,13 @@ span.required {
   }
 
   .fascia-feature__title{
-    padding:50px 0 10px;
-    font-size:18px;
+    padding:50px 0 20px;
+    font-size:16px;
   }
   
   .fascia-feature__title__point{
     left:-10px;
+    font-size:15px;
   }
   
   .feature__img{
@@ -1369,7 +1494,6 @@ span.required {
 
   .feature__text{
     clear:both;
-
   }
   
   .why__dr-voice{
@@ -1390,26 +1514,32 @@ span.required {
   }
   
   .dr-voice__text__title{
-    font-size:13px;
+    font-size:13.5px;
+    text-align:center;
   }
   
   .dr-voice__text__neme{
-    padding:3px 10px;
-    margin:10px 0;
-    border-left:solid 5px #36A3D5;
-    font-size:18px;
+    font-size:16px;
   }
   
   .dr-voice__text__clinic{
-    font-size:14px;
+    font-size:13px;
   }
-  
 
+  .dr-voice__text__physical-therapist{
+    font-size:13px;
+  }
+
+  
 
   .treatment__time__title{
     font-size:16px;
   }
   
+  .treatment__time__text__sub{
+    font-size:12px;
+  }
+
   .treatment__list{
     margin-bottom:100px
   }
@@ -1425,23 +1555,9 @@ span.required {
   }
   
   .treatment__title{
-    margin:0 auto 10px;
-    text-align:center;
-    font-size:22px;
-    color:#3D71B8;
-    border-bottom:solid 3px #36A3D5
+    font-size:16px;
   }
-  
-  .page-top{
-    bottom:55px;
-    right:10px;
-  }
-  
-  .page-top__btn{
-    font-size:22px;
-    padding:15px;
-    z-index:7;
-  }
+
 
   footer{
     margin-bottom:50px;
@@ -1458,106 +1574,35 @@ span.required {
   }
 
   .footer__text{
-    font-size:13px;
+    font-size:12px;
   }
   
-  .footer__text__li{
-    margin-bottom:10px;
-  }
   
   .footer__right{
     width:100%;
   }
 
-  .footer-map{
-    width:300px;
+  .footer__map{
+    margin-top:20px;
+    width:98%;
+    height:auto;
   }
   
   .footer__copy{
     font-size:10px;
   }
-    
-  .price__pc{
-    display:none;
-  }
 
-  .price__sp{
-    display:block;
+
+  .page-top{
+    bottom:55px;
+    right:10px;
   }
   
-  .price__sp1{
-    padding-top:50px;
-    object-fit: cover;
-  }
-  
-  .price__sp2{
-    width:80%;
-    margin-bottom:25px;
-    margin:0 auto;
-  }
-  
-  .price__contact{
-    flex-direction:column;
-  }
-  
-  .price__tel{
-    width:95%;
-    margin:0 auto;
-  }
-  
-  .price__tel__time{
+  .page-top__btn{
     font-size:22px;
-    margin-bottom:30px;
+    padding:15px;
+    z-index:7;
   }
-  
-  .price__tel__caution{
-    text-align:left;
-    font-size:18px;
-  }
-  
-  .price__mail{
-    width:95%;
-    margin:40px auto 0;
-  }
-  
-  .price__mail__btn{
-    display:none;
-  }
-
-  .price__mail__btn__sp{
-    display:block;
-    position:relative;
-  }
-
-  .btn__sp__text{
-    display:inline-block;
-    background:#fff;
-    color:#36A3D5;
-    font-size:16px;
-    width:93%;
-    margin-top:10px;
-    padding:10px ;
-  }
-
-  .price__mail__btn__sp .fa-caret-right{
-    font-size:30px;
-  }
-  
-  .btn__sp__arrow{
-    position:absolute;
-    right:3px;
-    bottom:-5px;
-    color:#36A3D5;
-  
-  }
-
-  .price__sp5{
-    position:absolute;
-    width:25px;
-    bottom:12px;
-    left:22px;
-  }
-  
 
   
   .bottom__contact{
@@ -1571,7 +1616,7 @@ span.required {
     width:100%;
     height:50px;
     align-items:center;
-    padding:0 30px
+    padding:0 15px
   }
 
   .bottom__tel,.bottom__mail{
@@ -1581,7 +1626,7 @@ span.required {
 
   .bottom__tel__btn,.bottom__mail__btn{
     text-align:center;
-    font-size:14px;
+    font-size:2.8vw;
     border-radius:4px;
     color:#fff;
     padding:5px 30px;
@@ -1611,6 +1656,95 @@ span.required {
   }
 
   .knee:after{
-    background:rgba(255,255,255,0.);
+    background:rgba(255,255,255,0.9);
+  }
+
+  .fascia:after,
+  .fascia-herapy:after{
+    background:rgba(255,255,255,0.3)
+  }
+
+  .price__pc{
+    display:none;
+  }
+
+  .price__sp{
+    display:block;
+    margin:0 auto;
+    background-image:url("../assets/img/price-sp-back.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:left;
+    padding:50px 0;
+  }
+  
+  
+  .price__sp1,.price__sp2{
+    width:100%;
+  }
+  
+  .price__sp2{
+    margin:10px 0;
+  }
+ 
+  .price__sp3,.price__sp4,.price__sp6,.price__sp8,.price__sp9{
+    width:80%;
+  }
+  
+
+  .price__top__sp{
+    background-image:url("../assets/img/price-sp3-back.png");
+    object-fit:cover;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:30px 0 10px;
+  }
+
+  .price__sp4{
+    padding-top:10px;
+  }
+  
+  .price__sp5{
+    width:55%;
+    margin-bottom:20px;
+  }
+  
+  .price__sp7{
+    width:40%;
+    margin-top:30px;
+  }
+  
+  .price__limited{
+    font-size:20px;
+  }
+  
+  .price__limited__number{
+    font-size:34px;
+  }
+  
+  .price__sp9{
+    margin:0 auto;
+    margin-bottom:10px;
+  }
+  
+  .price__people{
+    height:80px;
+    align-items:center;
+    color:yellow;
+    font-size:24px;
+  }
+  
+  .price__people__number{
+    display:inline-block;
+    background-image:url("../assets/img/price-sp10.png");
+    background-position:center;
+    background-size:80px 80px;
+    height:80px;
+    width:80px;
+    font-size:42px;
+    font-weight:600;
+    color:#3D71B8
   }
 }
