@@ -58,7 +58,7 @@ img{
 }
 
 .sec-title,.pc-menu,.sp-menu{
-  font-family:"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;;
+  font-family:"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
 }
 
 .sec-title:before {
@@ -219,11 +219,34 @@ header{
 
 
 
+.worries__content{
+  display:flex;
+  justify-content:space-between;
+  width:900px;
+  margin:0 auto;
+  align-items:center;
+}
+
+.worries__list{
+  width:70%;
+}
+
+.worries__img{
+  width:27%;
+
+}
+
+.worries__img img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
 .checkmark {
   padding: 10px 10px 10px 30px;
 	position:relative;
   text-align: left;
-  border-bottom: 2px dashed #ddd;
 }
 
 .checkmark:before,
@@ -302,13 +325,13 @@ header{
 }
 
 .knee__fascia__text{
-  font-size:22px;
+  font-size:36px;
 }
 
 .knee__fascia__name{
   display:inline-block;
   padding:5px;
-  font-size:46px;
+  font-size:54px;
   font-style:italic;
   color:blue;
   background: linear-gradient(transparent 40%, yellow 0%);
@@ -356,6 +379,19 @@ header{
   background:yellow;
 }
 
+.fascia__content{
+  display:flex;
+  justify-content:space-between;
+}
+
+.fascia__text{
+  width:58%;
+}
+
+.fascia__img{
+  width:40%;
+}
+
 
 
 .voice__content{
@@ -373,9 +409,11 @@ header{
 }
 
 .voice__title{
-  color:#36A3D5;
+  color:#fff;
+  background:#36A3D5;
   padding:5px 15px;
   font-size:24px;
+  border-radius:10px 10px 0 0;
 }
 
 .voice__youtube{
@@ -749,93 +787,45 @@ header{
   margin-right:10px;
 }
 
-.treatment__time,.slider {/*横幅90%で左右に余白を持たせて中央寄せ*/
-  width:90%;
-  margin:0 auto;
+.treatment__list{
+  background:#fff;
+  padding:20px;
 }
-
-.slider img {
-   width:100%;/*スライダー内の画像を横幅100%に*/
-   height:320px;
-   object-fit:cover;
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-   margin:0 70px;
-}
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-   position: absolute;/*絶対配置にする*/
-   top: 42%;
-   cursor: pointer;/*マウスカーソルを指マークに*/
-   outline: none;/*クリックをしたら出てくる枠線を消す*/
-   border-top: 5px solid #36A3D5;/*矢印の色*/
-   border-right:5px solid #36A3D5;/*矢印の色*/
-   height: 30px;
-   width: 30px;
-}
-
-.slick-prev {/*戻る矢印の位置と形状*/
-   left: -5%;
-   transform: rotate(-135deg);
-}
-
-.slick-next {/*次へ矢印の位置と形状*/
-   right: -5%;
-   transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-  text-align:center;
- margin:20px 0 0 0;
-}
-
-.slick-dots li {
-  display:inline-block;
-  margin:0 5px;
-}
-
-.slick-dots button {
-   color: transparent;
-   outline: none;
-   width:8px;/*ドットボタンのサイズ*/
-   height:8px;/*ドットボタンのサイズ*/
-   display:block;
-   border-radius:50%;
-   background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-   background:#36A3D5;/*ドットボタンの現在地表示の色*/
-}
-
-.treatment__text{
-  padding:10px 30px;
-  font-size:15px;
-  background:#fff
-}
-
 
 .treatment__title{
-  margin:0 auto 10px;
-  text-align:center;
   font-size:22px;
   color:#3D71B8;
   border-bottom:solid 3px #36A3D5
 }
 
-.treatment__text{
-  padding:10px 30px;
-  height:500px;
+.treatment__number{
+  font-style:italic;
+  font-size:28px;
 }
+
+.treatment__content{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.treatment__text{
+  width:65%;
+  font-size:15px;
+}
+
+.treatment__img{
+  width:30%;
+}
+
+.treatment__arrow{
+  text-align:center;
+  font-size:70px;
+  margin:30px auto;
+  color:#3D71B8;
+}
+
+
 
 
 
@@ -931,7 +921,7 @@ footer .container{
 }
 
 .suitable{
-  background:rgba(54,163,213,0.2);
+  background:rgba(54,163,213,0.05);
 }
 
 .treatment{
@@ -994,11 +984,16 @@ bottom: 0;
   background-color: rgba(54,163,213,0.08);
 }
 
-.voice:before,
-.treatment:after
+.voice:before
 {
   background-color: rgba(255,255,255,0.9);
 }
+
+.treatment:after
+{
+  background-color: rgba(255,255,255,0.7);
+}
+
 
 
 
@@ -1310,9 +1305,33 @@ span.required {
    margin-top:60px;
   }
     
+  .worries__content{
+    flex-direction:column;
+    width:100%;
+  }
+  
+  .worries__list{
+    width:100%;
+  }
+  
+  .worries__img{
+    margin-top:30px;
+    width:45%;
+  }
+  
+  .worries__img img{
+    width:100%;
+    height:40vw;
+  }
+
   .worries__useful{
     font-size:20px;
     padding:40px 20px 30px;
+  }
+  
+  .content-img__image{
+    width:calc(100% / 3);
+    object-fit:cover;
   }
 
   .knee__fascia{
@@ -1324,8 +1343,21 @@ span.required {
   }
   
   .knee__fascia__name{
-    font-size:24px;
+    font-size:26px;
     color:blue;
+  }
+
+  .fascia__content{
+    flex-direction:column-reverse;
+  }
+  
+  .fascia__text{
+    width:100%;
+  }
+  
+  .fascia__img{
+    width:80%;
+    margin:0 auto 20px;
   }
 
   .voice__content{
@@ -1530,34 +1562,36 @@ span.required {
     font-size:13px;
   }
 
-  
-
   .treatment__time__title{
     font-size:16px;
   }
-  
+
   .treatment__time__text__sub{
     font-size:12px;
   }
-
-  .treatment__list{
-    margin-bottom:100px
-  }
-
-  .treatment__list:last-child{
-    margin-bottom:50px
-  }
-
-  .treatment__text{
-    padding:10px 30px;
-    font-size:15px;
-    height:auto;
-  }
-  
+    
   .treatment__title{
     font-size:16px;
   }
-
+  
+  .treatment__number{
+    font-size:20px;
+  }
+  
+  .treatment__content{
+    flex-direction:column-reverse;
+  }
+  
+  .treatment__text{
+    width:100%;
+    font-size:15px;
+  }
+  
+  .treatment__img{
+    width:100%;
+  }
+  
+  
 
   footer{
     margin-bottom:50px;
