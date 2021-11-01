@@ -940,7 +940,9 @@ footer .container{
 
 .knee:after,
 .fascia:after,
+.fascia:before,
 .fascia-herapy:after,
+.fascia-herapy:before,
 .voice:before,
 .voice:after,
 .treatment:after
@@ -953,11 +955,9 @@ top: 0;
 bottom: 0;
 }
 
-.knee:after,
-.fascia:after,
-.fascia-herapy:after
+.knee:after
 {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.6);
 }
 
 .fascia:after,
@@ -965,6 +965,7 @@ bottom: 0;
 {
   background-color: rgba(255,255,255,0.2);
 }
+
 
 .voice:after
 {
@@ -1009,7 +1010,7 @@ bottom: 0;
   padding:30px 0 10px;
 }
 
-.price__pc3,.price__pc4,.price__pc5{
+.price__pc3,.price__pc4,.price__pc5,.price__pc8,.price__pc10{
   width:800px;
 }
 
@@ -1021,10 +1022,6 @@ bottom: 0;
   background-size: cover;
   background-position:center;
   text-align:center;
-}
-
-.price__pc4{
-  padding-top:30px;
 }
 
 .price__pc6{
@@ -1047,7 +1044,7 @@ bottom: 0;
 .price__limited__square{
   color:yellow;
   border:1px solid yellow;
-  font-size:60px;
+  font-size:54px;
   padding:5px 20px;
 
 }
@@ -1060,7 +1057,6 @@ bottom: 0;
 
 
 .price__pc8{
-  width:800px;
   margin:0 auto;
   margin-bottom:20px;
 }
@@ -1070,6 +1066,7 @@ bottom: 0;
   align-items:center;
   color:yellow;
   font-size:58px;
+  margin-bottom:50px;
 }
 
 .price__people__number{
@@ -1084,18 +1081,25 @@ bottom: 0;
   color:#3D71B8
 }
 
+
 .price__text{
   margin-top:30px;
-  font-size:32px;
+  font-size:38px;
 }
 
-.price__text__big{
+.price__text__square{
+  display:inline-block;
+  padding:20px 10px;
+  width:800px;
   margin-top:30px;
-  font-size:48px;
+  font-size:38px;
+  border:solid 1px #fff;
 }
 
-.price__text__yellow{
-  color:rgb(211, 211, 187);
+.price__pc11{
+  display:block;
+  margin:20px auto;
+  width:80px;
 }
 
 .price__sp{
@@ -1362,8 +1366,6 @@ span.required {
     flex-direction:column;
   }
  
-
-
   .voice__item{
     width:100%;
   }
@@ -1699,7 +1701,12 @@ span.required {
 
   .fascia:after,
   .fascia-herapy:after{
-    background:rgba(255,255,255,0.3)
+    background:rgba(255,255,255,0.05)
+  }
+
+  .fascia:before,
+  .fascia-herapy:before{
+    background:rgba(85,135,213,0.75);
   }
 
   .price__pc{
@@ -1726,7 +1733,7 @@ span.required {
     margin:10px 0;
   }
  
-  .price__sp3,.price__sp4,.price__sp6,.price__sp8,.price__sp9{
+  .price__sp3,.price__sp4,.price__sp6,.price__sp8,.price__sp9,.price__sp11{
     width:80%;
   }
   
@@ -1740,10 +1747,6 @@ span.required {
     padding:30px 0 10px;
   }
 
-  .price__sp4{
-    padding-top:10px;
-  }
-  
   .price__sp5{
     width:55%;
     margin-bottom:20px;
@@ -1796,9 +1799,18 @@ span.required {
     font-size:16px;
   }
   
-  .price__text__big{
+  .price__text__square{
     margin-top:30px;
-    font-size:20px;
+    font-size:16px;
+    display:inline-block;
+    width:80%;
+  }
+
+  .price__sp12{
+    width:10%;
+    display:block;
+    margin:10px auto;
+  
   }
 
 
