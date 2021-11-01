@@ -379,19 +379,6 @@ header{
   background:yellow;
 }
 
-.fascia__content{
-  display:flex;
-  justify-content:space-between;
-}
-
-.fascia__text{
-  width:58%;
-}
-
-.fascia__img{
-  width:40%;
-}
-
 
 
 .voice__content{
@@ -996,7 +983,6 @@ bottom: 0;
 
 
 
-
 .price{
   font-family:"Hiragino Sans","ヒラギノ角ゴシック","Meiryo","メイリオ",sans-serif;
   text-align:center;
@@ -1053,12 +1039,23 @@ bottom: 0;
 }
 
 .price__limited{
+  margin-top:20px;
   font-size:42px;
+  line-height:1.5;
+}
+
+.price__limited__square{
+  color:yellow;
+  border:1px solid yellow;
+  font-size:60px;
+  padding:5px 20px;
+
 }
 
 .price__limited__number{
   font-size:72px;
   font-weight:600;
+  color:yellow;
 }
 
 
@@ -1085,6 +1082,20 @@ bottom: 0;
   font-size:78px;
   font-weight:600;
   color:#3D71B8
+}
+
+.price__text{
+  margin-top:30px;
+  font-size:32px;
+}
+
+.price__text__big{
+  margin-top:30px;
+  font-size:48px;
+}
+
+.price__text__yellow{
+  color:rgb(211, 211, 187);
 }
 
 .price__sp{
@@ -1347,23 +1358,12 @@ span.required {
     color:blue;
   }
 
-  .fascia__content{
-    flex-direction:column-reverse;
-  }
-  
-  .fascia__text{
-    width:100%;
-  }
-  
-  .fascia__img{
-    width:80%;
-    margin:0 auto 20px;
-  }
-
   .voice__content{
     flex-direction:column;
   }
  
+
+
   .voice__item{
     width:100%;
   }
@@ -1372,7 +1372,11 @@ span.required {
     font-size:18px;
   }
   
-  
+  .voice__youtube{
+    width:100%;
+    height:60vw;
+  }
+
   .voice__name{
     font-size:16px;
   }
@@ -1753,6 +1757,11 @@ span.required {
   .price__limited{
     font-size:20px;
   }
+
+ .price__limited__square{
+   font-size:20px;
+   padding:5px 10px;
+ }
   
   .price__limited__number{
     font-size:34px;
@@ -1781,4 +1790,16 @@ span.required {
     font-weight:600;
     color:#3D71B8
   }
+
+  .price__text{
+    margin-top:30px;
+    font-size:16px;
+  }
+  
+  .price__text__big{
+    margin-top:30px;
+    font-size:20px;
+  }
+
+
 }
