@@ -392,7 +392,14 @@ header{
   width:48%;
   background:#fff;
   border-radius:10px;
-  margin:20px 0;
+  margin-top:50px;
+  padding-bottom:80px;
+  position:relative;
+  
+}
+
+.voice__item:nth-child(-n+2){
+  margin-top:0;
 }
 
 .voice__title{
@@ -409,7 +416,7 @@ header{
 }
 
 .voice__name{
-  margin-top:20px;
+  margin:10px 0;
   font-size:20px;
 }
 
@@ -425,7 +432,7 @@ header{
   padding:10px 10px 10px 60px;
   border: 1px solid #36A3D5;
   text-align:left;
-  margin-top:30px;
+  font-size:15px;
 }
 
 .voice__q:before {
@@ -442,16 +449,29 @@ header{
 
 .voice__q__icon{
   position:absolute;
-  top:15px;
-  left:15px;
+  top:4px;
+  left:7px;
   color:#fff;
-  font-size:22px;
+  font-size:20px;
 }
 
 .voice__a{
   text-align:left;
   padding:10px;
-  font-size:18px;
+  font-size:17px;
+  margin-bottom:30px;
+}
+
+.voice__bottom{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:10px;
+
+}
+
+.voice__thanks{
+  display:inline-block;
 }
 
 .voice__more{
