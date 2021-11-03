@@ -395,7 +395,10 @@ header{
   margin-top:50px;
   padding-bottom:80px;
   position:relative;
-  
+}
+
+.voice__item__sub{
+  display:none;
 }
 
 .voice__item:nth-child(-n+2){
@@ -472,6 +475,7 @@ header{
 
 .voice__thanks{
   display:inline-block;
+  margin-top:10px;
 }
 
 .voice__more{
@@ -482,6 +486,7 @@ header{
   border-radius:4px;
   margin:30px 0;
   cursor:pointer;
+  display:none;
 }
 
 .voice__more .fa-chevron-down{
@@ -1390,6 +1395,10 @@ span.required {
   .voice__item{
     width:100%;
   }
+
+  .voice__item:nth-child(2){
+    margin-top:50px;
+  }
   
   .voice__title{
     font-size:18px;
@@ -1404,8 +1413,21 @@ span.required {
     font-size:16px;
   }
   
+  .voice__q{
+    font-size:14px;
+  }
+
   .voice__q__icon{
     font-size:20px;
+  }
+
+  .voice__a{
+    font-size:16px;
+  }
+
+
+  .voice__thanks{
+    font-size:13px;
   }
   
   .voice__a{
