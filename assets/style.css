@@ -98,6 +98,12 @@ img{
   font-weight:bold;
 }
 
+.title-big{
+  font-size:46px;
+  padding:10px 0;
+  font-weight:bold;
+}
+
 
 
 header{
@@ -304,7 +310,7 @@ header{
 .content-img{
   display:flex;
   justify-content:space-between;
-  margin-top:50px;
+  margin-bottom:50px;
 }
 
 .content-img__image{
@@ -313,7 +319,7 @@ header{
 }
 
 .knee .content-img{
-  margin-bottom:50px;
+  margin-top:50px;
 }
 
 
@@ -321,7 +327,8 @@ header{
   text-align:center;
   position: relative;
   padding: 50px;
-  margin:50px 0
+  margin:50px 0;
+  display:none;
 }
 
 .knee__fascia__text{
@@ -365,16 +372,17 @@ header{
   border-width: 30px 60px 0 60px;
   border-color: #36A3D5  transparent transparent transparent;
   opacity:0.8;
+  display:none;
 }
 
-.fascia,
-.fascia .sec-title,
+
+
 .fascia-herapy,
 .fascia-herapy .sec-title{
   color:#fff;
 }
 
-.fascia .sec-title:before,
+
 .fascia-herapy .sec-title:before{
   background:yellow;
 }
@@ -456,6 +464,10 @@ header{
   left:7px;
   color:#fff;
   font-size:20px;
+}
+
+.voice__q__icon__small{
+  font-size:17.5px;
 }
 
 .voice__a{
@@ -915,7 +927,6 @@ footer .container{
 }
 
 
-
 .worries{
   background:rgba(54,163,213,0.03);
 }
@@ -924,7 +935,8 @@ footer .container{
   background-image:url("../assets/img/back3.jpg");
 }
 
-.fascia,.fascia-herapy{
+.fascia,
+.fascia-herapy{
   background-image:url("../assets/img/back1.jpg");
 }
 
@@ -965,7 +977,6 @@ footer .container{
 
 .knee:after,
 .fascia:after,
-.fascia:before,
 .fascia-herapy:after,
 .fascia-herapy:before,
 .voice:before,
@@ -985,7 +996,11 @@ bottom: 0;
   background-color: rgba(255,255,255,0.6);
 }
 
-.fascia:after,
+.fascia:after
+{
+  background-color: rgba(255,255,255,0.9);
+}
+
 .fascia-herapy:after
 {
   background-color: rgba(255,255,255,0.2);
@@ -1193,6 +1208,10 @@ span.required {
   
   .size-big{
     font-size:18px;
+  }
+
+  .title-big{
+    font-size:23px;
   }
 
   .header-top{
@@ -1419,6 +1438,9 @@ span.required {
 
   .voice__q__icon{
     font-size:20px;
+  }
+  .voice__q__icon__small{
+    font-size:17px;
   }
 
   .voice__a{
@@ -1742,12 +1764,11 @@ span.required {
     background:rgba(255,255,255,0.9);
   }
 
-  .fascia:after,
+
   .fascia-herapy:after{
     background:rgba(255,255,255,0.05)
   }
 
-  .fascia:before,
   .fascia-herapy:before{
     background:rgba(85,135,213,0.75);
   }
