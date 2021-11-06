@@ -1797,8 +1797,8 @@ span.required {
     margin:10px 0;
   }
  
-  .price__sp3,.price__sp4,.price__sp6,.price__sp8,.price__sp9,.price__sp11{
-    width:80%;
+  .price__sp3,.price__sp4,.price__sp6,.price__sp8,.price__sp9,.price__sp11,.price__sp13,.price__sp15{
+    width:90%;
   }
   
 
@@ -1811,28 +1811,33 @@ span.required {
     padding:30px 0 10px;
   }
 
+  .price__sp13{
+    margin-top:20px;
+  }
+
+  .price__limited{
+    font-size:24px;
+    margin-top:5px;
+  }
+
+  .price__limited__number{
+    font-size:36px;
+  }
+
   .price__sp5{
-    width:55%;
-    margin-bottom:20px;
+    width:70%;
+    margin-bottom:10px;
+  }
+  
+  .price__sp6{
+    width:80%;
   }
   
   .price__sp7{
     width:40%;
     margin-top:30px;
   }
-  
-  .price__limited{
-    font-size:20px;
-  }
-
- .price__limited__square{
-   font-size:20px;
-   padding:5px 10px;
- }
-  
-  .price__limited__number{
-    font-size:34px;
-  }
+ 
   
   .price__sp9{
     margin:0 auto;
@@ -1844,6 +1849,7 @@ span.required {
     align-items:center;
     color:yellow;
     font-size:24px;
+    margin-bottom:20px;
   }
   
   .price__people__number{
@@ -1858,22 +1864,15 @@ span.required {
     color:#3D71B8
   }
 
-  .price__text{
-    margin-top:30px;
-    font-size:16px;
-  }
-  
-  .price__text__square{
-    margin-top:30px;
-    font-size:16px;
-    display:inline-block;
+  .price__sp14{
+    margin:20px 0 10px;
     width:80%;
   }
 
   .price__sp12{
     width:10%;
     display:block;
-    margin:10px auto;
+    margin:15px auto 10px;
   
   }
 
