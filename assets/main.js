@@ -60,3 +60,16 @@ $(function () {
 }
 
 
+// アコーディオンメニュー
+$(function () {
+  $('.voice__accordion').css("display", "none");
+  $('.voice__open').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).css("display", "none");
+  })
+  $('.voice__close').on('click', function () {
+    $(this).parent('.voice__accordion').slideUp();
+    $(this).parent('.voice__accordion').prev('.voice__open').slideToggle();
+    // クリックされたボタンの親要素にあたる.ac-childはslideUpで閉じる
+  })
+});
