@@ -376,6 +376,16 @@ header{
 }
 
 
+.fascia-img{
+  width:70%;
+  margin:0 auto;
+  margin-bottom:50px;
+}
+
+.fascia-img img{
+  width:100%;
+}
+
 
 .fascia-herapy,
 .fascia-herapy .sec-title{
@@ -387,7 +397,28 @@ header{
   background:yellow;
 }
 
+.voice__item__top{
+  text-align:center;
+  width:70%;
+  background:#fff;
+  border-radius:10px;
+  margin:50px auto;
+  padding-bottom:20px;
+  position:relative;
+}
 
+.voice__title__top{
+  color:#fff;
+  background:#36A3D5;
+  padding:15px 15px;
+  font-size:24px;
+  border-radius:10px 10px 0 0;
+}
+
+.voice__youtube__top{
+  width:100%;
+  height:380px;
+}
 
 .voice__content{
   display:flex;
@@ -1414,6 +1445,10 @@ span.required {
     width:48%;
   } 
 
+  .fascia-img{
+    margin-bottom:10px;
+  }
+
   .knee__fascia{
     padding:50px 20px;
   }
@@ -1430,7 +1465,13 @@ span.required {
   .voice__content{
     flex-direction:column;
   }
- 
+  
+  .voice__title__top{
+    padding:5px 15px;
+    font-size:18px;
+  }
+  
+  .voice__item__top,
   .voice__item{
     width:100%;
   }
@@ -1443,6 +1484,7 @@ span.required {
     font-size:18px;
   }
   
+  .voice__youtube__top,
   .voice__youtube{
     width:100%;
     height:60vw;
@@ -1637,8 +1679,8 @@ span.required {
   }
   
   .dr-voice__img{
-    width:100%;
-    margin-bottom:5px;
+    width:60%;
+    margin:0 auto 5px;
   }
   
   .dr-voice__text{
@@ -1699,9 +1741,7 @@ span.required {
   
   
 
- footer{
-   margin-bottom:50px;
- }
+ 
   
   
   footer .container{
@@ -1747,7 +1787,7 @@ span.required {
   
   .bottom__contact{
     display:flex;
-    position:fixed;
+  
     bottom:0;
     left:0;
     background:#fff;
