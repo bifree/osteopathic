@@ -39,7 +39,7 @@ img{
 }
 
 .sentence{
-  max-width:800px;
+  padding:0 30px;
   margin:0 auto;
 }
 
@@ -376,6 +376,16 @@ header{
 }
 
 
+.fascia-img{
+  width:70%;
+  margin:0 auto;
+  margin-bottom:50px;
+}
+
+.fascia-img img{
+  width:100%;
+}
+
 
 .fascia-herapy,
 .fascia-herapy .sec-title{
@@ -387,7 +397,28 @@ header{
   background:yellow;
 }
 
+.voice__item__top{
+  text-align:center;
+  width:70%;
+  background:#fff;
+  border-radius:10px;
+  margin:50px auto;
+  padding-bottom:20px;
+  position:relative;
+}
 
+.voice__title__top{
+  color:#fff;
+  background:#36A3D5;
+  padding:15px 15px;
+  font-size:24px;
+  border-radius:10px 10px 0 0;
+}
+
+.voice__youtube__top{
+  width:100%;
+  height:380px;
+}
 
 .voice__content{
   display:flex;
@@ -401,7 +432,7 @@ header{
   background:#fff;
   border-radius:10px;
   margin-top:50px;
-  padding-bottom:80px;
+  padding-bottom:20px;
   position:relative;
 }
 
@@ -478,11 +509,7 @@ header{
 }
 
 .voice__bottom{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:10px;
-
+margin-bottom:20px;
 }
 
 .voice__thanks{
@@ -490,21 +517,22 @@ header{
   margin-top:10px;
 }
 
-.voice__more{
+.voice__open,
+.voice__close{
+  width:150px;
   display:inline-block;
   background:#36A3D5;
   padding:5px 15px;
   color:#fff;
   border-radius:4px;
-  margin:30px 0;
+  margin:0 auto 20px;
   cursor:pointer;
-  display:none;
 }
 
-.voice__more .fa-chevron-down{
+.voice__open .fa-angle-down,
+.voice__close .fa-angle-up{
   margin-left:5px;
 }
-
 
 .suitable__content{
   display:flex;
@@ -614,7 +642,7 @@ header{
 
 .why__item{
   clear:both;
-  padding:0 40px;
+  padding:0 20px;
 }
 
 .why__title{
@@ -668,7 +696,7 @@ header{
 }
 
 .why__content{
-  padding:0 80px;
+  padding:0 20px;
 }
 
 .why__content__img{
@@ -694,8 +722,8 @@ header{
 .why__fascia-feature {
   position: relative;
   display: inline-block;
-  margin: 30px 70px 10px;
-  padding:20px 40px 0;
+  margin: 30px 20px 0px;
+  padding:20px 5px 0;
   border-top: solid 3px #36A3D5;
   border-bottom: solid 3px #36A3D5;
 }
@@ -758,12 +786,16 @@ header{
   border-color: transparent transparent transparent #36A3D5;
 }
 
+.fascia-feature__sentence{
+  padding:0 10px;
+}
+
 .feature__img{
   width:320px;
 }
 
 .why__dr-voice{
-  margin: 10px 120px;
+  margin: 10px 20px;
 }
 
 .dr-voice__item{
@@ -772,6 +804,10 @@ header{
   border:solid 2px #c3c3c3;
   padding:20px;
   margin:50px 0;
+}
+
+.dr-voice__item:first-child{
+  margin:20px 0 50px;
 }
 
 .dr-voice__img{
@@ -1195,15 +1231,20 @@ span.required {
     padding:50px 20px;
   }
 
+  .sentence{
+    padding:0 5px;
+    margin:0 auto;
+  }
+
   .sec-title{
-    font-size:19.5px;
+    font-size:5.2vw;
     padding-bottom:10px;
     margin-bottom:30px;
   }
 
   .sec-title:before {
-    left: calc(50% - 150px);
-    width: 300px;
+    left: calc(50% - 29vw);
+    width: 58vw;
   }
   
   .size-big{
@@ -1211,7 +1252,7 @@ span.required {
   }
 
   .title-big{
-    font-size:23px;
+    font-size:6.1vw;
   }
 
   .header-top{
@@ -1366,7 +1407,7 @@ span.required {
   }
     
   .worries__content{
-    flex-direction:column;
+    flex-direction:column-reverse;
     width:100%;
   }
   
@@ -1375,7 +1416,7 @@ span.required {
   }
   
   .worries__img{
-    margin-top:30px;
+    margin:0 0 10px;
     width:45%;
   }
   
@@ -1394,6 +1435,20 @@ span.required {
     object-fit:cover;
   }
 
+  .knee .content-img,
+  .fascia-herapy .content-img{
+    margin:10px 0;
+  }
+
+  .knee .content-img img,
+  .fascia-herapy .content-img img{
+    width:48%;
+  } 
+
+  .fascia-img{
+    margin-bottom:10px;
+  }
+
   .knee__fascia{
     padding:50px 20px;
   }
@@ -1410,7 +1465,13 @@ span.required {
   .voice__content{
     flex-direction:column;
   }
- 
+  
+  .voice__title__top{
+    padding:5px 15px;
+    font-size:18px;
+  }
+  
+  .voice__item__top,
   .voice__item{
     width:100%;
   }
@@ -1423,6 +1484,7 @@ span.required {
     font-size:18px;
   }
   
+  .voice__youtube__top,
   .voice__youtube{
     width:100%;
     height:60vw;
@@ -1458,7 +1520,7 @@ span.required {
   
 
   .suitable__list__item{
-    font-size:18px;
+    font-size:4.8vw;
   }
   .suitable__content{
     flex-direction:column;
@@ -1506,33 +1568,34 @@ span.required {
   .profile__name{
     margin-bottom:30px;
     border-left:solid 5px #36A3D5;
-    font-size:20px;
+    font-size:5.3vw;
     padding:15px;
   }
 
   .pfofile__name__sub{
-    font-size:18px;
+    font-size:4.8vw;
   }
   
   .profile__name__clinic{
-    font-size:18px;
+    font-size:4.8vw;
   }
 
   .profile__career,.profile__text{
     padding:0 0 13px 5px;
-    font-size:14px;
+    font-size:3.3vw;
   }
   
   .profile__example{
     padding-top:20px;
     display:flex;
-    font-size:14px;
+    font-size:3.3vw;
   }
 
  
-
+  
   .sec-title__sub{
-    font-size:16px;
+    font-size:4.3vw;
+    margin:20px 0;
   }
 
   .why__item{
@@ -1561,12 +1624,12 @@ span.required {
 
   .why__content{
     margin:0 auto;
-    padding:0 40px;
+    padding:0 10px;
   }
 
   .why__content__img{
     width:100%;
-    margin:0 auto;
+    margin:0 auto 8px;
     text-align:center;
   } 
  
@@ -1576,13 +1639,16 @@ span.required {
   }
 
   .why__fascia-feature {
-    margin: 20px auto;;
-    padding:10px 40px 0;
+    margin: 20px 10px 0;
+    padding:10px 5px 0;
+  }
 
+  .fascia-feature__item{
+    padding-bottom:20px
   }
 
   .fascia-feature__title{
-    padding:50px 0 20px;
+    padding:45px 0 8px;
     font-size:16px;
   }
   
@@ -1598,9 +1664,13 @@ span.required {
   .feature__text{
     clear:both;
   }
+
+  .fascia-feature__sentence{
+    padding:0 2px;
+  }
   
   .why__dr-voice{
-    margin: 10px 40px;
+    margin:0 10px;
   }
   
   .dr-voice__item{
@@ -1609,20 +1679,22 @@ span.required {
   }
   
   .dr-voice__img{
-    width:100%;
+    width:60%;
+    margin:0 auto 5px;
   }
   
   .dr-voice__text{
     width:100%;
+    font-size:14px;
   }
   
   .dr-voice__text__title{
-    font-size:13.5px;
+    font-size:14px;
     text-align:center;
   }
   
   .dr-voice__text__neme{
-    font-size:16px;
+    font-size:15px;
   }
   
   .dr-voice__text__clinic{
@@ -1630,7 +1702,7 @@ span.required {
   }
 
   .dr-voice__text__physical-therapist{
-    font-size:13px;
+    font-size:12px;
   }
 
   .treatment__time__title{
@@ -1660,13 +1732,16 @@ span.required {
   
   .treatment__img{
     width:100%;
+    margin-bottom:8px
+  }
+
+  .treatment__arrow{
+    margin:10px auto;
   }
   
   
 
-  footer{
-    margin-bottom:50px;
-  }
+ 
   
   
   footer .container{
@@ -1712,7 +1787,7 @@ span.required {
   
   .bottom__contact{
     display:flex;
-    position:fixed;
+  
     bottom:0;
     left:0;
     background:#fff;
@@ -1875,5 +1950,4 @@ span.required {
     margin:15px auto 10px;
   
   }
-
 }
